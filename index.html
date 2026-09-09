@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gol de IA — Análise de Jogos e Odds</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">⚽</span>
+      <div>
+        <h1>Gol de IA</h1>
+        <p class="tagline">Odds e probabilidades dos principais campeonatos</p>
+      </div>
+    </div>
+    <div class="updated" id="updatedAt">Carregando dados…</div>
+  </header>
+
+  <div id="sampleBanner" class="banner" hidden>
+    ⚠️ Estes são <strong>dados de exemplo</strong>. Configure sua chave da The Odds API e rode o workflow
+    <code>Atualizar Odds</code> no GitHub Actions para ver os jogos reais. Veja o
+    <a href="https://github.com" id="readmeLink" target="_blank" rel="noopener">README</a> do repositório.
+  </div>
+
+  <main>
+    <section class="dashboard">
+      <h2>📊 Apostas mais prováveis do dia</h2>
+      <p class="hint">Ranking pela probabilidade implícita nas odds (odd convertida em % de chance, sem a margem da casa).</p>
+      <div class="chart-wrap">
+        <canvas id="topChart" height="260"></canvas>
+      </div>
+    </section>
+
+    <section class="filters" id="leagueFilters" aria-label="Filtrar por campeonato">
+      <!-- botões de liga inseridos via JS -->
+    </section>
+
+    <section class="games-grid" id="gamesGrid">
+      <!-- cards de jogos inseridos via JS -->
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalMeta" class="modal-meta"></p>
+
+      <div class="modal-section">
+        <h4>Resultado final (1X2)</h4>
+        <table class="odds-table" id="h2hTable"></table>
+        <div class="chart-wrap small"><canvas id="h2hChart" height="160"></canvas></div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Total de gols (Mais/Menos 2.5)</h4>
+        <table class="odds-table" id="totalsTable"></table>
+        <div class="chart-wrap small"><canvas id="totalsChart" height="160"></canvas></div>
+      </div>
+
+      <div class="modal-section" id="lineupsSection" hidden>
+        <h4>Escalações</h4>
+        <div class="lineups" id="lineupsBody"></div>
+      </div>
+
+      <div class="modal-section" id="statsSection" hidden>
+        <h4>Estatísticas da partida</h4>
+        <table class="odds-table" id="statsTable"></table>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      As porcentagens são <strong>probabilidades implícitas</strong> calculadas a partir das odds das casas de apostas
+      (não é garantia de resultado). Aposte com responsabilidade — se precisar de ajuda, procure o CVV (188) ou
+      apoio especializado em jogo responsável.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-09-09T12:00:00Z",
+  "is_sample": true,
+  "region": "eu",
+  "leagues": [
+    { "key": "soccer_brazil_campeonato", "name": "Brasileirão Série A" },
+    { "key": "soccer_conmebol_copa_libertadores", "name": "Libertadores" },
+    { "key": "soccer_uefa_champs_league", "name": "Champions League" },
+    { "key": "soccer_saudi_arabia_pro_league", "name": "Liga Saudita" }
+  ],
+  "games": [
+    {
+      "id": "sample-1",
+      "league_key": "soccer_conmebol_copa_libertadores",
+      "league_name": "Libertadores",
+      "commence_time": "2026-09-09T22:00:00Z",
+      "home_team": "Palmeiras",
+      "away_team": "LDU Quito",
+      "bookmaker_count": 8,
+      "markets": {
+        "h2h": [
+          { "name": "Palmeiras", "type": "home", "avg_price": 1.55, "implied_pct": 61.2 },
+          { "name": "Empate", "type": "draw", "avg_price": 4.10, "implied_pct": 23.1 },
+          { "name": "LDU Quito", "type": "away", "avg_price": 5.60, "implied_pct": 15.7 }
+        ],
+        "totals": [
+          { "name": "Mais de 2.5 gols", "type": "over", "point": 2.5, "avg_price": 1.90, "implied_pct": 52.0 },
+          { "name": "Menos de 2.5 gols", "type": "under", "point": 2.5, "avg_price": 1.85, "implied_pct": 48.0 }
+        ]
+      },
+      "live": { "status": "inprogress", "description": "2º tempo", "home_score": 2, "away_score": 0 },
+      "lineups": {
+        "confirmed": true,
+        "home": ["Weverton", "Marcos Rocha", "Murilo", "Gustavo Gómez", "Piquerez", "Richard Ríos", "Aníbal Moreno", "Raphael Veiga", "Estêvão", "Rony", "Flaco López"],
+        "away": ["Domínguez", "Ramírez", "Quiñónez", "Plata", "Zapata", "Quintero", "Vélez", "Alvarado", "Lucumí", "Tomasevich", "Ordóñez"]
+      },
+      "stats": [
+        { "name": "Ball possession", "home": "58%", "away": "42%" },
+        { "name": "Total shots", "home": 12, "away": 5 },
+        { "name": "Shots on target", "home": 6, "away": 1 },
+        { "name": "Corner kicks", "home": 7, "away": 2 }
+      ]
+    },
+    {
+      "id": "sample-2",
+      "league_key": "soccer_conmebol_copa_libertadores",
+      "league_name": "Libertadores",
+      "commence_time": "2026-09-10T00:30:00Z",
+      "home_team": "Corinthians",
+      "away_team": "Estudiantes",
+      "bookmaker_count": 7,
+      "markets": {
+        "h2h": [
+          { "name": "Corinthians", "type": "home", "avg_price": 2.05, "implied_pct": 44.8 },
+          { "name": "Empate", "type": "draw", "avg_price": 3.30, "implied_pct": 27.8 },
+          { "name": "Estudiantes", "type": "away", "avg_price": 3.75, "implied_pct": 24.4 }
+        ],
+        "totals": [
+          { "name": "Mais de 2.5 gols", "type": "over", "point": 2.5, "avg_price": 2.20, "implied_pct": 43.5 },
+          { "name": "Menos de 2.5 gols", "type": "under", "point": 2.5, "avg_price": 1.65, "implied_pct": 56.5 }
+        ]
+      }
+    },
+    {
+      "id": "sample-3",
+      "league_key": "soccer_brazil_campeonato",
+      "league_name": "Brasileirão Série A",
+      "commence_time": "2026-09-09T23:30:00Z",
+      "home_team": "Flamengo",
+      "away_team": "Botafogo",
+      "bookmaker_count": 9,
+      "markets": {
+        "h2h": [
+          { "name": "Flamengo", "type": "home", "avg_price": 2.10, "implied_pct": 43.5 },
+          { "name": "Empate", "type": "draw", "avg_price": 3.20, "implied_pct": 28.6 },
+          { "name": "Botafogo", "type": "away", "avg_price": 3.60, "implied_pct": 25.4 }
+        ],
+        "totals": [
+          { "name": "Mais de 2.5 gols", "type": "over", "point": 2.5, "avg_price": 1.95, "implied_pct": 49.5 },
+          { "name": "Menos de 2.5 gols", "type": "under", "point": 2.5, "avg_price": 1.80, "implied_pct": 50.5 }
+        ]
+      },
+      "live": { "status": "finished", "description": "Encerrado", "home_score": 1, "away_score": 1 }
+    },
+    {
+      "id": "sample-4",
+      "league_key": "soccer_uefa_champs_league",
+      "league_name": "Champions League",
+      "commence_time": "2026-09-10T18:45:00Z",
+      "home_team": "Real Madrid",
+      "away_team": "Bayern de Munique",
+      "bookmaker_count": 10,
+      "markets": {
+        "h2h": [
+          { "name": "Real Madrid", "type": "home", "avg_price": 2.30, "implied_pct": 40.1 },
+          { "name": "Empate", "type": "draw", "avg_price": 3.75, "implied_pct": 24.6 },
+          { "name": "Bayern de Munique", "type": "away", "avg_price": 2.90, "implied_pct": 32.6 }
+        ],
+        "totals": [
+          { "name": "Mais de 2.5 gols", "type": "over", "point": 2.5, "avg_price": 1.70, "implied_pct": 55.9 },
+          { "name": "Menos de 2.5 gols", "type": "under", "point": 2.5, "avg_price": 2.15, "implied_pct": 44.1 }
+        ]
+      }
+    },
+    {
+      "id": "sample-5",
+      "league_key": "soccer_saudi_arabia_pro_league",
+      "league_name": "Liga Saudita",
+      "commence_time": "2026-09-10T16:00:00Z",
+      "home_team": "Al Hilal",
+      "away_team": "Al Nassr",
+      "bookmaker_count": 5,
+      "markets": {
+        "h2h": [
+          { "name": "Al Hilal", "type": "home", "avg_price": 2.45, "implied_pct": 38.3 },
+          { "name": "Empate", "type": "draw", "avg_price": 3.50, "implied_pct": 26.8 },
+          { "name": "Al Nassr", "type": "away", "avg_price": 2.80, "implied_pct": 34.9 }
+        ],
+        "totals": [
+          { "name": "Mais de 2.5 gols", "type": "over", "point": 2.5, "avg_price": 1.80, "implied_pct": 51.3 },
+          { "name": "Menos de 2.5 gols", "type": "under", "point": 2.5, "avg_price": 2.00, "implied_pct": 48.7 }
+        ]
+      }
+    }
+  ]
+}
