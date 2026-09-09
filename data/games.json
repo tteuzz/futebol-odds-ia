@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T22:27:25.352779+00:00",
+  "generated_at": "2026-09-09T22:28:36.702941+00:00",
   "is_sample": false,
   "region": "eu",
   "leagues": [
@@ -1102,20 +1102,20 @@
           {
             "name": "LDU Quito",
             "type": "away",
-            "avg_price": 25.21,
-            "implied_pct": 3.9
+            "avg_price": 26.29,
+            "implied_pct": 3.6
           },
           {
             "name": "Palmeiras-SP",
             "type": "home",
-            "avg_price": 1.15,
-            "implied_pct": 84.6
+            "avg_price": 1.12,
+            "implied_pct": 85.1
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 8.46,
-            "implied_pct": 11.5
+            "avg_price": 8.41,
+            "implied_pct": 11.3
           }
         ],
         "totals": [
@@ -1123,57 +1123,43 @@
             "name": "Mais de 3.0 gols",
             "type": "over",
             "point": 3.0,
-            "avg_price": 1.75,
-            "implied_pct": 13.2
+            "avg_price": 2.03,
+            "implied_pct": 15.3
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 1.93,
-            "implied_pct": 12.0
+            "avg_price": 1.68,
+            "implied_pct": 18.5
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.57,
-            "implied_pct": 14.7
+            "avg_price": 1.5,
+            "implied_pct": 20.7
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.12,
-            "implied_pct": 10.9
-          },
-          {
-            "name": "Mais de 3.5 gols",
-            "type": "over",
-            "point": 3.5,
-            "avg_price": 2.4,
-            "implied_pct": 9.7
-          },
-          {
-            "name": "Menos de 3.5 gols",
-            "type": "under",
-            "point": 3.5,
-            "avg_price": 1.5,
-            "implied_pct": 15.4
+            "avg_price": 2.31,
+            "implied_pct": 13.4
           },
           {
             "name": "Mais de 2.0 gols",
             "type": "over",
             "point": 2.0,
             "avg_price": 1.88,
-            "implied_pct": 12.3
+            "implied_pct": 16.5
           },
           {
             "name": "Menos de 2.0 gols",
             "type": "under",
             "point": 2.0,
             "avg_price": 1.97,
-            "implied_pct": 11.8
+            "implied_pct": 15.7
           }
         ]
       }
@@ -1408,7 +1394,7 @@
           {
             "name": "Fenerbahce",
             "type": "home",
-            "avg_price": 3.34,
+            "avg_price": 3.35,
             "implied_pct": 28.6
           },
           {
@@ -1464,12 +1450,12 @@
             "name": "PSV Eindhoven",
             "type": "home",
             "avg_price": 1.43,
-            "implied_pct": 66.7
+            "implied_pct": 66.6
           },
           {
             "name": "Shakhtar Donetsk",
             "type": "away",
-            "avg_price": 6.57,
+            "avg_price": 6.56,
             "implied_pct": 14.5
           },
           {
@@ -1564,7 +1550,7 @@
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 12.47,
+            "avg_price": 12.48,
             "implied_pct": 7.7
           }
         ],
@@ -1708,13 +1694,13 @@
           {
             "name": "Sabah FK",
             "type": "away",
-            "avg_price": 23.88,
+            "avg_price": 23.83,
             "implied_pct": 4.0
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 9.47,
+            "avg_price": 9.48,
             "implied_pct": 10.1
           }
         ],
@@ -2667,14 +2653,14 @@
             "type": "over",
             "point": 2.5,
             "avg_price": 1.45,
-            "implied_pct": 16.4
+            "implied_pct": 16.5
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.68,
-            "implied_pct": 8.9
+            "avg_price": 2.71,
+            "implied_pct": 8.8
           },
           {
             "name": "Mais de 3.25 gols",
@@ -3112,7 +3098,7 @@
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.6,
+            "avg_price": 3.59,
             "implied_pct": 26.0
           }
         ],
@@ -4715,7 +4701,7 @@
           {
             "name": "Real Racing Club de Santander",
             "type": "away",
-            "avg_price": 21.29,
+            "avg_price": 21.24,
             "implied_pct": 4.4
           },
           {
@@ -4738,7 +4724,7 @@
             "type": "under",
             "point": 4.5,
             "avg_price": 1.79,
-            "implied_pct": 26.3
+            "implied_pct": 26.2
           },
           {
             "name": "Mais de 2.5 gols",
