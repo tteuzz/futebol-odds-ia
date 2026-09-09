@@ -2,8 +2,15 @@
 
 Uso: ODDS_API_KEY=xxxx python scripts/fetch_odds.py
 
-Mantém o consumo de créditos baixo: 1 chamada por liga, mercados h2h + totals,
-região "eu". Ajuste LEAGUES/REGIONS/MARKETS abaixo conforme seu plano.
+Orçamento de créditos (plano free = 500/mês): 5 ligas x 3 mercados (h2h, totals,
+btts) x 1 região = 15 créditos por execução. Rodando 1x/dia = ~450/mês, com folga
+pra reruns manuais. Handicap/escanteios/cartões não entram aqui — a The Odds API
+não cobre escanteios/cartões em nenhum plano, e handicap ficou de fora pra caber
+no orçamento com 5 ligas (ele ainda pode ser adicionado manualmente via
+data/analises.json, como no exemplo Santos x Atlético-MG).
+
+Ajuste LEAGUES/REGIONS/MARKETS abaixo conforme seu plano — cada liga ou mercado
+a mais multiplica o custo por execução.
 """
 
 import json
@@ -18,19 +25,16 @@ import sofascore
 
 API_BASE = "https://api.the-odds-api.com/v4/sports"
 REGION = "eu"
-MARKETS = "h2h,totals"
+MARKETS = "h2h,totals,btts"
 ODDS_FORMAT = "decimal"
 
 # sport_key (The Odds API) -> nome exibido no site
 LEAGUES = {
     "soccer_brazil_campeonato": "Brasileirão Série A",
     "soccer_conmebol_copa_libertadores": "Libertadores",
-    "soccer_uefa_champs_league": "Champions League",
-    "soccer_saudi_arabia_pro_league": "Liga Saudita",
+    "soccer_conmebol_copa_sudamericana": "Copa Sul-Americana",
     "soccer_epl": "Premier League",
-    "soccer_spain_la_liga": "La Liga",
-    "soccer_italy_serie_a": "Serie A (Itália)",
-    "soccer_germany_bundesliga": "Bundesliga",
+    "soccer_uefa_champs_league": "Champions League",
 }
 
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "games.json")
@@ -138,6 +142,28 @@ def build_totals(event):
     return result
 
 
+def build_btts(event):
+    avg = average_prices_by_outcome(event.get("bookmakers", []), "btts")
+    if not avg:
+        return []
+    names = list(avg.keys())
+    prices = [avg[k] for k in names]
+    pcts = implied_probabilities(prices)
+
+    result = []
+    for (name, _point), price, pct in zip(names, prices, pcts):
+        is_yes = name.strip().lower() == "yes"
+        result.append(
+            {
+                "name": "Ambas marcam — Sim" if is_yes else "Ambas marcam — Não",
+                "type": "yes" if is_yes else "no",
+                "avg_price": round(price, 2),
+                "implied_pct": pct,
+            }
+        )
+    return result
+
+
 def update_history(games):
     """Acrescenta a % implícita do favorito de hoje ao histórico de cada jogo (data/history.json).
     Best-effort: se o arquivo não existir ainda, começa do zero."""
@@ -181,6 +207,7 @@ def main():
             away_team = event.get("away_team")
             h2h = build_h2h(event, home_team, away_team)
             totals = build_totals(event)
+            btts = build_btts(event)
             if not h2h and not totals:
                 continue
 
@@ -193,7 +220,7 @@ def main():
                     "home_team": home_team,
                     "away_team": away_team,
                     "bookmaker_count": len(event.get("bookmakers", [])),
-                    "markets": {"h2h": h2h, "totals": totals},
+                    "markets": {"h2h": h2h, "totals": totals, "btts": btts},
                 }
             )
 

@@ -1,9 +1,11 @@
 # Gol de IA
 
 Site estático que mostra os jogos das principais ligas de futebol (Brasileirão, Libertadores,
-Champions League, Liga Saudita, Premier League, La Liga, Serie A, Bundesliga) com as odds das
-casas de apostas convertidas em **probabilidade implícita (%)**, gráficos de "apostas mais
-prováveis do dia" e, quando disponível, placar ao vivo/escalações/estatísticas via SofaScore.
+Copa Sul-Americana, Premier League, Champions League) com as odds das casas de apostas
+convertidas em **probabilidade implícita (%)** — 1X2, gols e BTTS (ambas marcam) automáticos,
+handicap/escanteios/cartões nas análises manuais —, histórico diário da odd, gráficos de
+"apostas mais prováveis do dia" e, quando disponível, placar ao vivo/escalações/estatísticas via
+SofaScore.
 
 ⚠️ **Isto é uma ferramenta informativa, não uma recomendação de aposta.** As porcentagens são
 probabilidades implícitas nas odds do mercado, não previsões garantidas. Aposte com responsabilidade.
@@ -50,9 +52,21 @@ Edite o dicionário `LEAGUES` em `scripts/fetch_odds.py` — a chave é o `sport
 e o valor é o nome exibido no site. Lista completa de ligas disponíveis:
 https://the-odds-api.com/sports-odds-data/sports-apis.html
 
-⚠️ Cada liga consultada gasta créditos (mercados × regiões). Com 8 ligas, `h2h` + `totals` e
-região `eu`, uma atualização por dia consome ~480 dos 500 créditos gratuitos do mês. Se adicionar
-mais ligas ou rodar com mais frequência, ajuste o `cron` no workflow ou migre para um plano pago.
+⚠️ Cada liga consultada gasta créditos (mercados × regiões). Com 5 ligas, `h2h` + `totals` + `btts`
+e região `eu`, uma atualização por dia consome ~450 dos 500 créditos gratuitos do mês (15
+créditos/execução). Adicionar liga ou mercado sem estourar a cota:
+- +1 liga = +3 créditos/execução (~90/mês)
+- +1 mercado (ex: `spreads` pra handicap) = +5 créditos/execução (~150/mês)
+
+Se quiser mais ligas/mercados do que cabe, ajuste o `cron` no workflow (ex: a cada 2 dias) ou
+migre pra um plano pago da The Odds API.
+
+### Escanteios e cartões
+
+A The Odds API **não oferece** esses mercados em nenhum plano — por isso eles só aparecem nas
+análises manuais (`data/analises.json`). A alternativa mais barata encontrada até agora é a
+[5DollarFootballAPI](https://5dollarfootballapi.com/) (plano Pro, US$5/mês, inclui corner/card
+lines do Bet365) — não foi integrada ainda porque é um serviço pequeno e não verificado.
 
 ## Rodando localmente
 
