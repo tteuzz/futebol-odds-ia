@@ -19,6 +19,10 @@
     </div>
   </header>
 
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
   <div id="sampleBanner" class="banner" hidden>
     ⚠️ Estes são <strong>dados de exemplo</strong>. Configure sua chave da The Odds API e rode o workflow
     <code>Atualizar Odds</code> no GitHub Actions para ver os jogos reais. Veja o
@@ -51,6 +55,11 @@
       <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
       <h3 id="modalTitle"></h3>
       <p id="modalMeta" class="modal-meta"></p>
+
+      <div class="modal-section" id="historySection" hidden>
+        <div class="section-label"><span class="dot"></span>HISTÓRICO DA ODD</div>
+        <div id="historySparkline"></div>
+      </div>
 
       <div class="modal-section">
         <div class="section-label"><span class="dot"></span>RESULTADO FINAL (1X2)</div>

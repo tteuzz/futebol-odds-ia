@@ -34,6 +34,8 @@ LEAGUES = {
 }
 
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "games.json")
+HISTORY_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "history.json")
+HISTORY_MAX_ENTRIES = 14
 
 
 def fetch_league(sport_key: str, api_key: str):
@@ -136,6 +138,31 @@ def build_totals(event):
     return result
 
 
+def update_history(games):
+    """Acrescenta a % implícita do favorito de hoje ao histórico de cada jogo (data/history.json).
+    Best-effort: se o arquivo não existir ainda, começa do zero."""
+    try:
+        with open(HISTORY_PATH, "r", encoding="utf-8") as f:
+            history = json.load(f).get("matches", {})
+    except (FileNotFoundError, json.JSONDecodeError):
+        history = {}
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    for game in games:
+        h2h = game.get("markets", {}).get("h2h", [])
+        if not h2h:
+            continue
+        favorite = max(h2h, key=lambda o: o["implied_pct"])
+        entries = history.setdefault(game["id"], [])
+        entries[:] = [e for e in entries if e["date"] != today]
+        entries.append({"date": today, "pct": favorite["implied_pct"]})
+        entries.sort(key=lambda e: e["date"])
+        del entries[:-HISTORY_MAX_ENTRIES]
+
+    with open(HISTORY_PATH, "w", encoding="utf-8") as f:
+        json.dump({"matches": history}, f, ensure_ascii=False, indent=2)
+
+
 def main():
     api_key = os.environ.get("ODDS_API_KEY")
     if not api_key:
@@ -174,6 +201,8 @@ def main():
 
     print(f"\nEnriquecendo {len(games)} jogos com dados do SofaScore (placar/escalações/estatísticas)...")
     games = [sofascore.enrich_game(g) for g in games]
+
+    update_history(games)
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

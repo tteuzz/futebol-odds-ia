@@ -1,8 +1,51 @@
 const state = {
   data: null,
+  history: {},
   activeLeague: "all",
   activeDate: "all",
 };
+
+// Cores reais de clubes conhecidos (usadas como um filete de cor no card).
+// Times fora da lista recebem uma cor estável (hash do nome) do FALLBACK_PALETTE.
+const TEAM_COLORS = {
+  "Palmeiras": "#0a6b3d",
+  "Corinthians": "#3a3a3a",
+  "Santos": "#e8e8e8",
+  "Flamengo": "#c1121f",
+  "Botafogo": "#1a1a1a",
+  "São Paulo": "#c1121f",
+  "Atlético-MG": "#1a1a1a",
+  "Coritiba": "#1a5c38",
+  "Atletico Paranaense": "#c1121f",
+  "LDU Quito": "#e8b33d",
+  "Estudiantes La Plata": "#c1121f",
+  "Independiente del Valle": "#c1121f",
+  "Real Madrid": "#e8e8e8",
+  "Barcelona": "#a50044",
+  "Bayern Munich": "#c1121f",
+  "Borussia Dortmund": "#f9d616",
+  "Manchester United": "#c1121f",
+  "Chelsea": "#1e5aa8",
+  "Aston Villa": "#7a1e3c",
+  "Sevilla": "#c1121f",
+  "Valencia": "#e8890c",
+  "AS Roma": "#8b1538",
+  "Fenerbahce": "#f9d616",
+  "PSV Eindhoven": "#e8890c",
+  "RB Leipzig": "#1e5aa8",
+  "Al Hilal": "#1a6b3d",
+  "Al Nassr": "#f9d616",
+  "Al-Ittihad": "#f9d616",
+  "Al-Ahli": "#1a6b3d",
+};
+const FALLBACK_PALETTE = ["#22c07a", "#8b7cf6", "#f2643b", "#e8b33d", "#4fd1c5", "#e0779a"];
+
+function teamColor(name) {
+  if (TEAM_COLORS[name]) return TEAM_COLORS[name];
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
+  return FALLBACK_PALETTE[hash % FALLBACK_PALETTE.length];
+}
 
 let h2hChartInstance = null;
 let totalsChartInstance = null;
@@ -36,8 +79,24 @@ async function init() {
     console.warn("Sem análises extras (data/analises.json):", err);
   }
 
+  // data/history.json guarda o histórico diário da odd favorita de cada jogo, escrito
+  // pelo próprio workflow automático. Usado pro gráfico de "histórico da odd" no modal.
+  try {
+    const historyRes = await fetch("data/history.json", { cache: "no-store" });
+    if (historyRes.ok) {
+      const historyData = await historyRes.json();
+      state.history = historyData.matches || {};
+    }
+  } catch (err) {
+    console.warn("Sem histórico de odds (data/history.json):", err);
+  }
+  state.data.games.forEach((g) => {
+    if (!g.history && state.history[g.id]) g.history = state.history[g.id];
+  });
+
   renderUpdatedAt();
   renderSampleBanner();
+  renderTicker();
   renderDateFilters();
   renderLeagueFilters();
   renderGames();
@@ -47,6 +106,31 @@ async function init() {
   document.getElementById("modalOverlay").addEventListener("click", (e) => {
     if (e.target.id === "modalOverlay") closeModal();
   });
+}
+
+function renderTicker() {
+  const track = document.getElementById("tickerTrack");
+  if (!track) return;
+
+  const rows = [];
+  state.data.games.forEach((game) => {
+    const fav = topOutcome(game.markets.h2h);
+    rows.push({ label: `${game.home_team} x ${game.away_team}`, name: fav.name, pct: fav.implied_pct });
+  });
+  rows.sort((a, b) => b.pct - a.pct);
+  const top = rows.slice(0, 14);
+
+  if (top.length === 0) {
+    track.innerHTML = "";
+    return;
+  }
+
+  const itemsHtml = top
+    .map((r) => `<span class="ticker-item">${r.label} <strong>${r.name} ${r.pct.toFixed(0)}%</strong></span>`)
+    .join('<span class="ticker-sep">▸</span>');
+
+  // duplica o conteúdo pra animação de rolagem ficar contínua (loop de -50%)
+  track.innerHTML = itemsHtml + '<span class="ticker-sep">▸</span>' + itemsHtml;
 }
 
 function renderUpdatedAt() {
@@ -130,16 +214,32 @@ function renderGames() {
     .sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
 
   if (games.length === 0) {
-    grid.innerHTML = `<p style="color:var(--text-dim)">Nenhum jogo encontrado para este filtro.</p>`;
+    grid.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">🚩</div>
+        <p>Nenhum jogo encontrado.</p>
+        <p class="hint">Tenta outro dia ou campeonato.</p>
+      </div>`;
     return;
   }
 
   games.forEach((game) => grid.appendChild(buildGameCard(game)));
 }
 
+function gaugeSvg(pct, color) {
+  const r = 15.915;
+  return `
+    <svg class="gauge" viewBox="0 0 36 36">
+      <circle class="gauge-bg" cx="18" cy="18" r="${r}"></circle>
+      <circle class="gauge-fill" cx="18" cy="18" r="${r}" stroke="${color}" stroke-dasharray="${pct} 100" transform="rotate(-90 18 18)"></circle>
+      <text x="18" y="20.5" class="gauge-text">${pct.toFixed(0)}%</text>
+    </svg>`;
+}
+
 function buildGameCard(game) {
   const card = document.createElement("div");
   card.className = "game-card";
+  card.style.borderLeft = `3px solid ${teamColor(game.home_team)}`;
   card.addEventListener("click", () => openModal(game));
 
   const dt = new Date(game.commence_time);
@@ -153,6 +253,9 @@ function buildGameCard(game) {
   });
 
   const favorite = topOutcome(game.markets.h2h);
+  const tagsHtml = game.tags && game.tags.length
+    ? `<div class="tag-row">${game.tags.map((t) => `<span class="tag-chip">${t}</span>`).join("")}</div>`
+    : "";
 
   card.innerHTML = `
     <span class="league-tag">${game.league_name}</span>
@@ -169,7 +272,11 @@ function buildGameCard(game) {
       </div>
     </div>
     <div class="datetime">${formatted} (BRT)${liveBadgeHtml(game.live)}</div>
-    <div class="favorite">Favorito: ${favorite.name} · ${favorite.implied_pct.toFixed(0)}%</div>
+    <div class="favorite-row">
+      ${gaugeSvg(favorite.implied_pct, teamColor(favorite.name))}
+      <span class="favorite">Favorito: ${favorite.name}</span>
+    </div>
+    ${tagsHtml}
   `;
   return card;
 }
@@ -229,6 +336,7 @@ function openModal(game) {
 
   renderLineups(game);
   renderStats(game);
+  renderHistorySection(game);
 
   document.getElementById("modalOverlay").hidden = false;
 }
@@ -386,6 +494,52 @@ function renderStats(game) {
       </tr>`
     )
     .join("");
+}
+
+function formatShortDate(dateStr) {
+  return new Date(`${dateStr}T12:00:00Z`).toLocaleDateString("pt-BR", {
+    day: "2-digit",
+    month: "2-digit",
+    timeZone: "America/Sao_Paulo",
+  });
+}
+
+function renderHistorySection(game) {
+  const section = document.getElementById("historySection");
+  const history = game.history;
+  if (!history || history.length < 2) {
+    section.hidden = true;
+    return;
+  }
+  section.hidden = false;
+
+  const w = 460;
+  const hgt = 64;
+  const pad = 8;
+  const pcts = history.map((p) => p.pct);
+  const min = Math.min(...pcts);
+  const max = Math.max(...pcts);
+  const range = max - min || 1;
+  const stepX = (w - pad * 2) / (history.length - 1);
+  const points = history.map((p, i) => {
+    const x = pad + i * stepX;
+    const y = hgt - pad - ((p.pct - min) / range) * (hgt - pad * 2);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  });
+
+  const first = history[0];
+  const last = history[history.length - 1];
+  const trendColor = last.pct >= first.pct ? "#22c07a" : "#f2643b";
+
+  document.getElementById("historySparkline").innerHTML = `
+    <svg viewBox="0 0 ${w} ${hgt}" preserveAspectRatio="none" class="sparkline">
+      <polyline points="${points.join(" ")}" fill="none" stroke="${trendColor}" stroke-width="2" />
+    </svg>
+    <div class="history-labels">
+      <span>${formatShortDate(first.date)} · ${first.pct.toFixed(1)}%</span>
+      <span>${formatShortDate(last.date)} · ${last.pct.toFixed(1)}%</span>
+    </div>
+  `;
 }
 
 function renderRanking() {

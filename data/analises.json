@@ -11,6 +11,14 @@
       "away_team": "Atlético-MG",
       "bookmaker_count": 6,
       "featured_analysis": true,
+      "tags": ["🛡️ Jogo fechado", "⚠️ Desfalque importante", "🏠 Mando forte"],
+      "history": [
+        { "date": "2026-09-05", "pct": 38.5 },
+        { "date": "2026-09-06", "pct": 39.8 },
+        { "date": "2026-09-07", "pct": 39.2 },
+        { "date": "2026-09-08", "pct": 40.6 },
+        { "date": "2026-09-09", "pct": 41.4 }
+      ],
       "markets": {
         "h2h": [
           { "name": "Santos", "type": "home", "avg_price": 2.30, "implied_pct": 41.4 },
