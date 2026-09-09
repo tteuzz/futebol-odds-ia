@@ -25,7 +25,7 @@ import sofascore
 
 API_BASE = "https://api.the-odds-api.com/v4/sports"
 REGION = "eu"
-MARKETS = "h2h,totals,btts"
+MARKETS = "h2h,totals"
 ODDS_FORMAT = "decimal"
 
 # sport_key (The Odds API) -> nome exibido no site
