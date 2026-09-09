@@ -1,6 +1,7 @@
 const state = {
   data: null,
   activeLeague: "all",
+  activeDate: "all",
 };
 
 let topChartInstance = null;
@@ -35,6 +36,7 @@ async function init() {
 
   renderUpdatedAt();
   renderSampleBanner();
+  renderDateFilters();
   renderLeagueFilters();
   renderGames();
   renderTopChart();
@@ -59,6 +61,41 @@ function renderSampleBanner() {
   if (state.data.is_sample) {
     document.getElementById("sampleBanner").hidden = false;
   }
+}
+
+function dateKey(isoString) {
+  return new Date(isoString).toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" });
+}
+
+function renderDateFilters() {
+  const container = document.getElementById("dateFilters");
+  const keys = [...new Set(state.data.games.map((g) => dateKey(g.commence_time)))].sort();
+
+  const buttons = [
+    { key: "all", label: "Todos os dias" },
+    ...keys.map((key) => {
+      const label = new Date(`${key}T12:00:00Z`).toLocaleDateString("pt-BR", {
+        weekday: "short",
+        day: "2-digit",
+        month: "2-digit",
+        timeZone: "America/Sao_Paulo",
+      });
+      return { key, label: label.replace(".", "") };
+    }),
+  ];
+
+  container.innerHTML = "";
+  buttons.forEach((btn) => {
+    const el = document.createElement("button");
+    el.className = "filter-btn" + (btn.key === state.activeDate ? " active" : "");
+    el.textContent = btn.label;
+    el.addEventListener("click", () => {
+      state.activeDate = btn.key;
+      renderDateFilters();
+      renderGames();
+    });
+    container.appendChild(el);
+  });
 }
 
 function renderLeagueFilters() {
@@ -87,6 +124,7 @@ function renderGames() {
 
   const games = [...state.data.games]
     .filter((g) => state.activeLeague === "all" || g.league_name === state.activeLeague)
+    .filter((g) => state.activeDate === "all" || dateKey(g.commence_time) === state.activeDate)
     .sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
 
   if (games.length === 0) {
