@@ -4,9 +4,11 @@ const state = {
   activeDate: "all",
 };
 
-let topChartInstance = null;
 let h2hChartInstance = null;
 let totalsChartInstance = null;
+
+Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.color = "#8d8d95";
 
 init();
 
@@ -39,7 +41,7 @@ async function init() {
   renderDateFilters();
   renderLeagueFilters();
   renderGames();
-  renderTopChart();
+  renderRanking();
 
   document.getElementById("modalClose").addEventListener("click", closeModal);
   document.getElementById("modalOverlay").addEventListener("click", (e) => {
@@ -263,8 +265,8 @@ function renderDonut(canvasId, outcomes, getInstance, setInstance) {
       datasets: [
         {
           data: sorted.map((o) => o.implied_pct),
-          backgroundColor: ["#22c55e", "#3b82f6", "#f59e0b", "#ef4444"],
-          borderColor: "#16223a",
+          backgroundColor: ["#22c07a", "#8b7cf6", "#f2643b", "#e8b33d"],
+          borderColor: "#1a1a1f",
           borderWidth: 2,
         },
       ],
@@ -273,7 +275,7 @@ function renderDonut(canvasId, outcomes, getInstance, setInstance) {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        legend: { position: "bottom", labels: { color: "#e8edf7", boxWidth: 12, font: { size: 11 } } },
+        legend: { position: "bottom", labels: { color: "#f2efea", boxWidth: 12, font: { size: 11 } } },
       },
     },
   });
@@ -386,7 +388,7 @@ function renderStats(game) {
     .join("");
 }
 
-function renderTopChart() {
+function renderRanking() {
   const rows = [];
   state.data.games.forEach((game) => {
     Object.entries(game.markets).forEach(([marketKey, outcomes]) => {
@@ -402,31 +404,31 @@ function renderTopChart() {
 
   rows.sort((a, b) => b.pct - a.pct);
   const top = rows.slice(0, 8);
+  const podiumOrder = [top[1], top[0], top[2]].filter(Boolean);
 
-  const ctx = document.getElementById("topChart");
-  if (topChartInstance) topChartInstance.destroy();
-  topChartInstance = new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: top.map((r) => r.label),
-      datasets: [
-        {
-          label: "Probabilidade implícita (%)",
-          data: top.map((r) => r.pct),
-          backgroundColor: "#22c55e",
-          borderRadius: 6,
-        },
-      ],
-    },
-    options: {
-      indexAxis: "y",
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        x: { min: 0, max: 100, ticks: { color: "#93a2c2" }, grid: { color: "#223252" } },
-        y: { ticks: { color: "#e8edf7", font: { size: 11 } }, grid: { display: false } },
-      },
-      plugins: { legend: { display: false } },
-    },
-  });
+  const podium = document.getElementById("podium");
+  podium.innerHTML = podiumOrder
+    .map((r) => {
+      const rank = top.indexOf(r) + 1;
+      return `
+      <div class="podium-item rank-${rank}">
+        <div class="podium-rank">#${rank}</div>
+        <div class="podium-pct">${r.pct.toFixed(0)}%</div>
+        <div class="podium-label">${r.label}</div>
+      </div>`;
+    })
+    .join("");
+
+  const rankList = document.getElementById("rankList");
+  rankList.innerHTML = top
+    .slice(3)
+    .map(
+      (r, i) => `
+      <div class="rank-row">
+        <span class="rank-num">#${i + 4}</span>
+        <span class="rank-label">${r.label}</span>
+        <span class="rank-pct">${r.pct.toFixed(1)}%</span>
+      </div>`
+    )
+    .join("");
 }

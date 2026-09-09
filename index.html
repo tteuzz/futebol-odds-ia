@@ -4,18 +4,19 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Gol de IA — Análise de Jogos e Odds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">
-      <span class="brand-icon">⚽</span>
-      <div>
-        <h1>Gol de IA</h1>
-        <p class="tagline">Odds e probabilidades dos principais campeonatos</p>
-      </div>
+    <div class="topbar-inner">
+      <div class="eyebrow"><span class="dot"></span>ANÁLISE DE ODDS EM TEMPO REAL</div>
+      <h1>Gol de IA</h1>
+      <p class="tagline">Onde a odd vira leitura clara — Brasileirão, Libertadores, Champions League, Liga Saudita e mais.</p>
+      <div class="updated" id="updatedAt">Carregando dados…</div>
     </div>
-    <div class="updated" id="updatedAt">Carregando dados…</div>
   </header>
 
   <div id="sampleBanner" class="banner" hidden>
@@ -26,11 +27,12 @@
 
   <main>
     <section class="dashboard">
-      <h2>📊 Apostas mais prováveis do dia</h2>
-      <p class="hint">Ranking pela probabilidade implícita nas odds (odd convertida em % de chance, sem a margem da casa).</p>
-      <div class="chart-wrap">
-        <canvas id="topChart" height="260"></canvas>
-      </div>
+      <div class="eyebrow"><span class="dot"></span>RANKING DO DIA</div>
+      <h2>Os palpites mais prováveis</h2>
+      <p class="hint">Probabilidade implícita nas odds — a odd do mercado convertida em % de chance, sem a margem da casa.</p>
+
+      <div class="podium" id="podium"></div>
+      <div class="rank-list" id="rankList"></div>
     </section>
 
     <section class="filters" id="dateFilters" aria-label="Filtrar por dia"></section>
@@ -51,56 +53,56 @@
       <p id="modalMeta" class="modal-meta"></p>
 
       <div class="modal-section">
-        <h4>Resultado final (1X2)</h4>
+        <div class="section-label"><span class="dot"></span>RESULTADO FINAL (1X2)</div>
         <table class="odds-table" id="h2hTable"></table>
         <div class="chart-wrap small"><canvas id="h2hChart" height="160"></canvas></div>
       </div>
 
       <div class="modal-section">
-        <h4>Total de gols (Mais/Menos 2.5)</h4>
+        <div class="section-label"><span class="dot"></span>TOTAL DE GOLS (MAIS/MENOS 2.5)</div>
         <table class="odds-table" id="totalsTable"></table>
         <div class="chart-wrap small"><canvas id="totalsChart" height="160"></canvas></div>
       </div>
 
       <div class="modal-section" id="handicapSection" hidden>
-        <h4>Handicap asiático</h4>
+        <div class="section-label"><span class="dot"></span>HANDICAP ASIÁTICO</div>
         <table class="odds-table" id="handicapTable"></table>
       </div>
 
       <div class="modal-section" id="bttsSection" hidden>
-        <h4>Ambas equipes marcam (BTTS)</h4>
+        <div class="section-label"><span class="dot"></span>AMBAS EQUIPES MARCAM (BTTS)</div>
         <table class="odds-table" id="bttsTable"></table>
       </div>
 
       <div class="modal-section" id="cornersSection" hidden>
-        <h4>Escanteios</h4>
+        <div class="section-label"><span class="dot"></span>ESCANTEIOS</div>
         <table class="odds-table" id="cornersTable"></table>
       </div>
 
       <div class="modal-section" id="cardsSection" hidden>
-        <h4>Cartões</h4>
+        <div class="section-label"><span class="dot"></span>CARTÕES</div>
         <table class="odds-table" id="cardsTable"></table>
         <p class="hint" id="cardsHint"></p>
       </div>
 
       <div class="modal-section" id="suggestedSection" hidden>
-        <h4>Entradas sugeridas</h4>
+        <div class="section-label"><span class="dot"></span>ENTRADAS SUGERIDAS</div>
         <table class="odds-table" id="suggestedTable"></table>
         <p class="hint" id="parlayHint"></p>
       </div>
 
       <div class="modal-section" id="notesSection" hidden>
-        <h4>Análise e contexto</h4>
+        <div class="section-label"><span class="dot"></span>ANÁLISE E CONTEXTO</div>
         <ul class="notes-list" id="notesList"></ul>
       </div>
 
       <div class="modal-section" id="lineupsSection" hidden>
-        <h4>Escalações</h4>
+        <div class="section-label"><span class="dot"></span>ESCALAÇÕES</div>
         <div class="lineups" id="lineupsBody"></div>
       </div>
 
       <div class="modal-section" id="statsSection" hidden>
-        <h4>Estatísticas da partida</h4>
+        <div class="section-label"><span class="dot"></span>ESTATÍSTICAS DA PARTIDA</div>
         <table class="odds-table" id="statsTable"></table>
       </div>
     </div>
