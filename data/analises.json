@@ -1,0 +1,59 @@
+{
+  "games": [
+    {
+      "id": "analise-santos-atletico-mg-2026-09-09",
+      "league_key": "soccer_conmebol_sudamericana",
+      "league_name": "Copa Sul-Americana",
+      "round": "Quartas de final (ida)",
+      "venue": "Estádio Urbano Caldeira (Vila Belmiro), Santos",
+      "commence_time": "2026-09-09T21:00:00Z",
+      "home_team": "Santos",
+      "away_team": "Atlético-MG",
+      "bookmaker_count": 6,
+      "featured_analysis": true,
+      "markets": {
+        "h2h": [
+          { "name": "Santos", "type": "home", "avg_price": 2.30, "implied_pct": 41.4 },
+          { "name": "Empate", "type": "draw", "avg_price": 3.30, "implied_pct": 28.9 },
+          { "name": "Atlético-MG", "type": "away", "avg_price": 3.20, "implied_pct": 29.8 }
+        ],
+        "handicap": [
+          { "name": "Atlético-MG +0.25", "type": "away", "point": 0.25, "avg_price": 1.84, "implied_pct": 53.9 },
+          { "name": "Santos -0.25", "type": "home", "point": -0.25, "avg_price": 2.15, "implied_pct": 46.1 }
+        ],
+        "totals": [
+          { "name": "Menos de 2.5 gols", "type": "under", "point": 2.5, "avg_price": 1.77, "implied_pct": 56.5 },
+          { "name": "Mais de 2.5 gols", "type": "over", "point": 2.5, "avg_price": 2.30, "implied_pct": 43.5 }
+        ],
+        "btts": [
+          { "name": "Ambas marcam — Não", "type": "no", "avg_price": 1.85, "implied_pct": 54.0 },
+          { "name": "Ambas marcam — Sim", "type": "yes", "avg_price": 2.17, "implied_pct": 46.0 }
+        ],
+        "corners": [
+          { "name": "Mais de 9.5 escanteios", "type": "over", "point": 9.5, "avg_price": 1.69, "implied_pct": 59.1 },
+          { "name": "Menos de 9.5 escanteios", "type": "under", "point": 9.5, "avg_price": 2.44, "implied_pct": 40.9 }
+        ],
+        "cards": [
+          { "name": "Mais de 3.5 cartões", "type": "over", "point": 3.5, "avg_price": 1.75, "implied_pct": 57.3, "confidence": "moderada" },
+          { "name": "Menos de 3.5 cartões", "type": "under", "point": 3.5, "avg_price": 2.35, "implied_pct": 42.7, "confidence": "moderada" }
+        ]
+      },
+      "suggested_bets": [
+        { "label": "Dupla Chance (Santos ou Empate)", "pct": "~73-77%" },
+        { "label": "Handicap Atlético-MG +0.25 (valor)", "pct": "~54%" },
+        { "label": "Menos de 2.5 gols", "pct": "~55-58%" },
+        { "label": "Ambas marcam — Não", "pct": "~53-55%" },
+        { "label": "Mais de 9.5 escanteios", "pct": "~58-60%" }
+      ],
+      "suggested_parlay": "Dupla Chance (Santos ou Empate) + Menos de 2.5 Gols + Mais de 9.5 Escanteios",
+      "notes": [
+        "Santos está invicto nos últimos 3 jogos (1 derrota nos últimos 8) e vem de vitória por 3-2 sobre o Internacional fora de casa, com 2 gols de Gabigol. Retrospecto forte na Vila Belmiro contra o Galo: 21 vitórias em 35 jogos.",
+        "Atlético-MG vem de derrota para o São Paulo (2-0) e perde Tomás Cuello, artilheiro do clube em 2026, suspenso — desfalque relevante no ataque. Como visitante, xG médio de 1,35 e gols em 78% dos jogos fora de BH na temporada.",
+        "H2H: Santos invicto nos últimos 3 confrontos diretos. Nos últimos 10 jogos: 4 vitórias do Atlético-MG, 3 empates, 3 vitórias do Santos. Confronto mais recente: Santos 1-0.",
+        "Um modelo (Sportytrader) diverge do mercado e favorece fortemente o empate (41,8%) — tratar com cautela, mas reforça a leitura de jogo parelho.",
+        "Escanteios: Santos tem média de 8 escanteios a favor nos últimos 3 jogos em casa; Atlético-MG costuma ceder espaço pelas pontas como visitante — combinação favorece escanteios acima da média.",
+        "Cartões: não há linha consolidada das casas de apostas para este confronto — estimativa qualitativa de confiança moderada, baseada no padrão de mata-mata continental entre rivais."
+      ]
+    }
+  ]
+}

@@ -19,6 +19,20 @@ async function init() {
     return;
   }
 
+  // data/analises.json guarda análises aprofundadas feitas manualmente (mercados extras,
+  // contexto, apostas sugeridas). Não é sobrescrito pelo workflow automático de odds.
+  try {
+    const analysisRes = await fetch("data/analises.json", { cache: "no-store" });
+    if (analysisRes.ok) {
+      const analysisData = await analysisRes.json();
+      const existingIds = new Set(state.data.games.map((g) => g.id));
+      const extra = (analysisData.games || []).filter((g) => !existingIds.has(g.id));
+      state.data.games.push(...extra);
+    }
+  } catch (err) {
+    console.warn("Sem análises extras (data/analises.json):", err);
+  }
+
   renderUpdatedAt();
   renderSampleBanner();
   renderLeagueFilters();
@@ -102,6 +116,7 @@ function buildGameCard(game) {
 
   card.innerHTML = `
     <span class="league-tag">${game.league_name}</span>
+    ${game.featured_analysis ? '<span class="analysis-tag">🔎 Análise completa</span>' : ""}
     <div class="teams">
       <div class="team">
         <div class="avatar">${initials(game.home_team)}</div>
@@ -154,11 +169,23 @@ function openModal(game) {
   });
   document.getElementById("modalMeta").textContent = `${game.league_name} · ${formatted} (Brasília) · ${game.bookmaker_count || "—"} casas consultadas`;
 
+  const roundVenue = [game.round, game.venue].filter(Boolean).join(" · ");
+  if (roundVenue) {
+    document.getElementById("modalMeta").textContent += ` · ${roundVenue}`;
+  }
+
   fillOddsTable("h2hTable", game.markets.h2h);
   fillOddsTable("totalsTable", game.markets.totals);
 
   renderDonut("h2hChart", game.markets.h2h, (o) => h2hChartInstance, (c) => (h2hChartInstance = c));
   renderDonut("totalsChart", game.markets.totals, (o) => totalsChartInstance, (c) => (totalsChartInstance = c));
+
+  renderOptionalMarket("handicapSection", "handicapTable", game.markets.handicap);
+  renderOptionalMarket("bttsSection", "bttsTable", game.markets.btts);
+  renderOptionalMarket("cornersSection", "cornersTable", game.markets.corners);
+  renderCards(game.markets.cards);
+  renderSuggested(game);
+  renderNotes(game);
 
   renderLineups(game);
   renderStats(game);
@@ -213,6 +240,56 @@ function renderDonut(canvasId, outcomes, getInstance, setInstance) {
     },
   });
   setInstance(chart);
+}
+
+function renderOptionalMarket(sectionId, tableId, outcomes) {
+  const section = document.getElementById(sectionId);
+  if (!outcomes || outcomes.length === 0) {
+    section.hidden = true;
+    return;
+  }
+  section.hidden = false;
+  fillOddsTable(tableId, outcomes);
+}
+
+function renderCards(outcomes) {
+  const section = document.getElementById("cardsSection");
+  if (!outcomes || outcomes.length === 0) {
+    section.hidden = true;
+    return;
+  }
+  section.hidden = false;
+  fillOddsTable("cardsTable", outcomes);
+  const hasModerateConfidence = outcomes.some((o) => o.confidence && o.confidence !== "alta");
+  document.getElementById("cardsHint").textContent = hasModerateConfidence
+    ? "⚠️ Sem linha consolidada das casas de apostas para este mercado — estimativa qualitativa, confiança moderada."
+    : "";
+}
+
+function renderSuggested(game) {
+  const section = document.getElementById("suggestedSection");
+  const bets = game.suggested_bets;
+  if (!bets || bets.length === 0) {
+    section.hidden = true;
+    return;
+  }
+  section.hidden = false;
+  document.getElementById("suggestedTable").innerHTML = bets
+    .map((b) => `<tr><td>${b.label}</td><td>${b.pct}</td></tr>`)
+    .join("");
+  const parlayEl = document.getElementById("parlayHint");
+  parlayEl.textContent = game.suggested_parlay ? `🧾 Múltipla sugerida: ${game.suggested_parlay}` : "";
+}
+
+function renderNotes(game) {
+  const section = document.getElementById("notesSection");
+  const notes = game.notes;
+  if (!notes || notes.length === 0) {
+    section.hidden = true;
+    return;
+  }
+  section.hidden = false;
+  document.getElementById("notesList").innerHTML = notes.map((n) => `<li>${n}</li>`).join("");
 }
 
 function renderLineups(game) {
