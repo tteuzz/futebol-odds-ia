@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T22:21:07.878521+00:00",
+  "generated_at": "2026-11-24T20:57:27.037311+00:00",
   "is_sample": false,
   "region": "eu",
   "leagues": [
@@ -26,204 +26,32 @@
   ],
   "games": [
     {
-      "id": "c1339bf6458b24fdfaa62305a6947a8c",
-      "league_key": "soccer_brazil_campeonato",
-      "league_name": "Brasileirão Série A",
-      "commence_time": "2026-11-23T22:30:00Z",
-      "home_team": "Internacional",
-      "away_team": "Vitoria",
-      "bookmaker_count": 24,
-      "markets": {
-        "h2h": [
-          {
-            "name": "Internacional",
-            "type": "home",
-            "avg_price": 1.6,
-            "implied_pct": 57.9
-          },
-          {
-            "name": "Vitoria",
-            "type": "away",
-            "avg_price": 5.42,
-            "implied_pct": 17.1
-          },
-          {
-            "name": "Empate",
-            "type": "draw",
-            "avg_price": 3.7,
-            "implied_pct": 25.0
-          }
-        ],
-        "totals": [
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.96,
-            "implied_pct": 48.0
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 1.81,
-            "implied_pct": 52.0
-          }
-        ],
-        "btts": []
-      }
-    },
-    {
-      "id": "d0352a1171c0a09774d5854eef621421",
-      "league_key": "soccer_brazil_campeonato",
-      "league_name": "Brasileirão Série A",
-      "commence_time": "2026-11-23T23:00:00Z",
-      "home_team": "Botafogo",
-      "away_team": "Sao Paulo",
-      "bookmaker_count": 24,
-      "markets": {
-        "h2h": [
-          {
-            "name": "Botafogo",
-            "type": "home",
-            "avg_price": 2.18,
-            "implied_pct": 42.7
-          },
-          {
-            "name": "Sao Paulo",
-            "type": "away",
-            "avg_price": 3.21,
-            "implied_pct": 28.9
-          },
-          {
-            "name": "Empate",
-            "type": "draw",
-            "avg_price": 3.27,
-            "implied_pct": 28.4
-          }
-        ],
-        "totals": [
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.93,
-            "implied_pct": 48.7
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 1.83,
-            "implied_pct": 51.3
-          }
-        ],
-        "btts": []
-      }
-    },
-    {
-      "id": "c70e8cc8f8aedeee2ed518993aaced38",
-      "league_key": "soccer_brazil_campeonato",
-      "league_name": "Brasileirão Série A",
-      "commence_time": "2026-11-24T00:00:00Z",
-      "home_team": "Santos",
-      "away_team": "Grêmio",
-      "bookmaker_count": 23,
-      "markets": {
-        "h2h": [
-          {
-            "name": "Grêmio",
-            "type": "away",
-            "avg_price": 4.71,
-            "implied_pct": 19.7
-          },
-          {
-            "name": "Santos",
-            "type": "home",
-            "avg_price": 1.61,
-            "implied_pct": 57.7
-          },
-          {
-            "name": "Empate",
-            "type": "draw",
-            "avg_price": 4.11,
-            "implied_pct": 22.6
-          }
-        ],
-        "totals": [
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.52,
-            "implied_pct": 20.6
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 2.37,
-            "implied_pct": 13.2
-          },
-          {
-            "name": "Mais de 3.0 gols",
-            "type": "over",
-            "point": 3.0,
-            "avg_price": 1.85,
-            "implied_pct": 17.0
-          },
-          {
-            "name": "Menos de 3.0 gols",
-            "type": "under",
-            "point": 3.0,
-            "avg_price": 1.96,
-            "implied_pct": 16.0
-          },
-          {
-            "name": "Mais de 3.5 gols",
-            "type": "over",
-            "point": 3.5,
-            "avg_price": 2.31,
-            "implied_pct": 13.6
-          },
-          {
-            "name": "Menos de 3.5 gols",
-            "type": "under",
-            "point": 3.5,
-            "avg_price": 1.6,
-            "implied_pct": 19.6
-          }
-        ],
-        "btts": []
-      }
-    },
-    {
       "id": "0c21d6b1fcc860152966888ac7ac9d9a",
       "league_key": "soccer_brazil_campeonato",
       "league_name": "Brasileirão Série A",
       "commence_time": "2026-11-24T21:00:00Z",
       "home_team": "Chapecoense",
       "away_team": "Palmeiras",
-      "bookmaker_count": 23,
+      "bookmaker_count": 24,
       "markets": {
         "h2h": [
           {
             "name": "Chapecoense",
             "type": "home",
-            "avg_price": 3.62,
-            "implied_pct": 25.6
+            "avg_price": 3.33,
+            "implied_pct": 27.9
           },
           {
             "name": "Palmeiras",
             "type": "away",
-            "avg_price": 1.89,
-            "implied_pct": 49.0
+            "avg_price": 2.02,
+            "implied_pct": 46.0
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.64,
-            "implied_pct": 25.4
+            "avg_price": 3.55,
+            "implied_pct": 26.2
           }
         ],
         "totals": [
@@ -231,43 +59,43 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.66,
-            "implied_pct": 19.0
+            "avg_price": 1.62,
+            "implied_pct": 19.6
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.13,
-            "implied_pct": 14.9
+            "avg_price": 2.2,
+            "implied_pct": 14.4
           },
           {
             "name": "Mais de 2.75 gols",
             "type": "over",
             "point": 2.75,
-            "avg_price": 1.92,
-            "implied_pct": 16.5
+            "avg_price": 1.84,
+            "implied_pct": 17.2
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 1.95,
-            "implied_pct": 16.2
+            "avg_price": 2.05,
+            "implied_pct": 15.4
           },
           {
             "name": "Mais de 3.0 gols",
             "type": "over",
             "point": 3.0,
-            "avg_price": 2.06,
-            "implied_pct": 15.3
+            "avg_price": 2.01,
+            "implied_pct": 15.7
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 1.75,
-            "implied_pct": 18.1
+            "avg_price": 1.79,
+            "implied_pct": 17.7
           }
         ],
         "btts": []
@@ -287,19 +115,19 @@
             "name": "Atletico Mineiro",
             "type": "home",
             "avg_price": 2.29,
-            "implied_pct": 40.1
+            "implied_pct": 40.2
           },
           {
             "name": "Corinthians",
             "type": "away",
-            "avg_price": 2.9,
-            "implied_pct": 31.7
+            "avg_price": 2.91,
+            "implied_pct": 31.6
           },
           {
             "name": "Empate",
             "type": "draw",
             "avg_price": 3.27,
-            "implied_pct": 28.1
+            "implied_pct": 28.2
           }
         ],
         "totals": [
@@ -308,14 +136,14 @@
             "type": "over",
             "point": 2.5,
             "avg_price": 1.98,
-            "implied_pct": 47.2
+            "implied_pct": 47.3
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
             "avg_price": 1.77,
-            "implied_pct": 52.8
+            "implied_pct": 52.7
           }
         ],
         "btts": []
@@ -328,26 +156,26 @@
       "commence_time": "2026-11-26T23:00:00Z",
       "home_team": "Sao Paulo",
       "away_team": "Remo",
-      "bookmaker_count": 4,
+      "bookmaker_count": 23,
       "markets": {
         "h2h": [
           {
             "name": "Remo",
             "type": "away",
-            "avg_price": 5.8,
-            "implied_pct": 15.7
+            "avg_price": 7.86,
+            "implied_pct": 11.7
           },
           {
             "name": "Sao Paulo",
             "type": "home",
-            "avg_price": 1.49,
-            "implied_pct": 61.1
+            "avg_price": 1.34,
+            "implied_pct": 68.8
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.91,
-            "implied_pct": 23.3
+            "avg_price": 4.75,
+            "implied_pct": 19.4
           }
         ],
         "totals": [
@@ -355,15 +183,43 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.81,
-            "implied_pct": 50.5
+            "avg_price": 1.65,
+            "implied_pct": 19.0
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 1.85,
-            "implied_pct": 49.5
+            "avg_price": 2.14,
+            "implied_pct": 14.7
+          },
+          {
+            "name": "Mais de 2.75 gols",
+            "type": "over",
+            "point": 2.75,
+            "avg_price": 1.87,
+            "implied_pct": 16.8
+          },
+          {
+            "name": "Menos de 2.75 gols",
+            "type": "under",
+            "point": 2.75,
+            "avg_price": 1.97,
+            "implied_pct": 15.9
+          },
+          {
+            "name": "Mais de 3.0 gols",
+            "type": "over",
+            "point": 3.0,
+            "avg_price": 2.1,
+            "implied_pct": 15.0
+          },
+          {
+            "name": "Menos de 3.0 gols",
+            "type": "under",
+            "point": 3.0,
+            "avg_price": 1.69,
+            "implied_pct": 18.6
           }
         ],
         "btts": []
@@ -376,26 +232,26 @@
       "commence_time": "2026-11-27T23:00:00Z",
       "home_team": "Fluminense",
       "away_team": "Cruzeiro",
-      "bookmaker_count": 20,
+      "bookmaker_count": 22,
       "markets": {
         "h2h": [
           {
             "name": "Cruzeiro",
             "type": "away",
-            "avg_price": 3.26,
-            "implied_pct": 28.1
+            "avg_price": 3.31,
+            "implied_pct": 27.8
           },
           {
             "name": "Fluminense",
             "type": "home",
-            "avg_price": 2.01,
-            "implied_pct": 45.6
+            "avg_price": 2.0,
+            "implied_pct": 45.8
           },
           {
             "name": "Empate",
             "type": "draw",
             "avg_price": 3.48,
-            "implied_pct": 26.3
+            "implied_pct": 26.4
           }
         ],
         "totals": [
@@ -403,15 +259,15 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.69,
-            "implied_pct": 27.9
+            "avg_price": 1.7,
+            "implied_pct": 27.8
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.06,
-            "implied_pct": 22.9
+            "avg_price": 2.05,
+            "implied_pct": 23.0
           },
           {
             "name": "Mais de 2.75 gols",
@@ -438,26 +294,26 @@
       "commence_time": "2026-11-29T00:00:00Z",
       "home_team": "Botafogo",
       "away_team": "Bahia",
-      "bookmaker_count": 4,
+      "bookmaker_count": 21,
       "markets": {
         "h2h": [
           {
             "name": "Bahia",
             "type": "away",
-            "avg_price": 3.11,
-            "implied_pct": 29.4
+            "avg_price": 3.2,
+            "implied_pct": 28.6
           },
           {
             "name": "Botafogo",
             "type": "home",
-            "avg_price": 2.03,
-            "implied_pct": 45.0
+            "avg_price": 2.0,
+            "implied_pct": 45.8
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.56,
-            "implied_pct": 25.7
+            "avg_price": 3.58,
+            "implied_pct": 25.6
           }
         ],
         "totals": [
@@ -465,15 +321,43 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.54,
-            "implied_pct": 59.7
+            "avg_price": 1.52,
+            "implied_pct": 20.4
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
+            "avg_price": 2.35,
+            "implied_pct": 13.2
+          },
+          {
+            "name": "Mais de 3.0 gols",
+            "type": "over",
+            "point": 3.0,
+            "avg_price": 1.86,
+            "implied_pct": 16.8
+          },
+          {
+            "name": "Menos de 3.0 gols",
+            "type": "under",
+            "point": 3.0,
+            "avg_price": 1.93,
+            "implied_pct": 16.1
+          },
+          {
+            "name": "Mais de 3.5 gols",
+            "type": "over",
+            "point": 3.5,
             "avg_price": 2.28,
-            "implied_pct": 40.3
+            "implied_pct": 13.7
+          },
+          {
+            "name": "Menos de 3.5 gols",
+            "type": "under",
+            "point": 3.5,
+            "avg_price": 1.58,
+            "implied_pct": 19.8
           }
         ],
         "btts": []
@@ -492,20 +376,20 @@
           {
             "name": "Coritiba",
             "type": "home",
-            "avg_price": 4.38,
-            "implied_pct": 20.9
+            "avg_price": 4.24,
+            "implied_pct": 21.6
           },
           {
             "name": "Flamengo",
             "type": "away",
-            "avg_price": 1.64,
-            "implied_pct": 56.0
+            "avg_price": 1.67,
+            "implied_pct": 54.8
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.98,
-            "implied_pct": 23.0
+            "avg_price": 3.89,
+            "implied_pct": 23.6
           }
         ],
         "totals": [
@@ -513,29 +397,43 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.67,
-            "implied_pct": 28.2
+            "avg_price": 1.68,
+            "implied_pct": 18.6
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.1,
-            "implied_pct": 22.5
+            "avg_price": 2.08,
+            "implied_pct": 15.1
           },
           {
             "name": "Mais de 2.75 gols",
             "type": "over",
             "point": 2.75,
             "avg_price": 1.89,
-            "implied_pct": 25.0
+            "implied_pct": 16.6
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 1.94,
-            "implied_pct": 24.3
+            "avg_price": 1.91,
+            "implied_pct": 16.4
+          },
+          {
+            "name": "Mais de 3.0 gols",
+            "type": "over",
+            "point": 3.0,
+            "avg_price": 2.15,
+            "implied_pct": 14.6
+          },
+          {
+            "name": "Menos de 3.0 gols",
+            "type": "under",
+            "point": 3.0,
+            "avg_price": 1.68,
+            "implied_pct": 18.7
           }
         ],
         "btts": []
@@ -548,26 +446,26 @@
       "commence_time": "2026-11-29T19:00:00Z",
       "home_team": "Vitoria",
       "away_team": "Santos",
-      "bookmaker_count": 4,
+      "bookmaker_count": 21,
       "markets": {
         "h2h": [
           {
             "name": "Santos",
             "type": "away",
-            "avg_price": 2.36,
-            "implied_pct": 38.6
+            "avg_price": 2.3,
+            "implied_pct": 39.8
           },
           {
             "name": "Vitoria",
             "type": "home",
-            "avg_price": 2.74,
-            "implied_pct": 33.3
+            "avg_price": 2.86,
+            "implied_pct": 32.0
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.24,
-            "implied_pct": 28.1
+            "avg_price": 3.25,
+            "implied_pct": 28.2
           }
         ],
         "totals": [
@@ -575,15 +473,15 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.84,
-            "implied_pct": 50.0
+            "avg_price": 1.82,
+            "implied_pct": 51.1
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 1.84,
-            "implied_pct": 50.0
+            "avg_price": 1.91,
+            "implied_pct": 48.9
           }
         ],
         "btts": []
@@ -596,26 +494,26 @@
       "commence_time": "2026-11-29T21:30:00Z",
       "home_team": "Mirassol",
       "away_team": "Atletico Paranaense",
-      "bookmaker_count": 19,
+      "bookmaker_count": 20,
       "markets": {
         "h2h": [
           {
             "name": "Atletico Paranaense",
             "type": "away",
-            "avg_price": 3.24,
-            "implied_pct": 28.3
+            "avg_price": 3.25,
+            "implied_pct": 28.2
           },
           {
             "name": "Mirassol",
             "type": "home",
             "avg_price": 2.04,
-            "implied_pct": 44.9
+            "implied_pct": 45.1
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.42,
-            "implied_pct": 26.8
+            "avg_price": 3.43,
+            "implied_pct": 26.7
           }
         ],
         "totals": [
@@ -630,8 +528,8 @@
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 1.97,
-            "implied_pct": 24.1
+            "avg_price": 1.98,
+            "implied_pct": 23.9
           },
           {
             "name": "Mais de 2.75 gols",
@@ -644,8 +542,8 @@
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 1.85,
-            "implied_pct": 25.6
+            "avg_price": 1.84,
+            "implied_pct": 25.7
           }
         ],
         "btts": []
@@ -658,26 +556,26 @@
       "commence_time": "2026-11-29T21:30:00Z",
       "home_team": "Internacional",
       "away_team": "Bragantino-SP",
-      "bookmaker_count": 4,
+      "bookmaker_count": 22,
       "markets": {
         "h2h": [
           {
             "name": "Bragantino-SP",
             "type": "away",
-            "avg_price": 3.19,
-            "implied_pct": 28.7
+            "avg_price": 3.43,
+            "implied_pct": 26.0
           },
           {
             "name": "Internacional",
             "type": "home",
-            "avg_price": 2.1,
-            "implied_pct": 43.6
+            "avg_price": 1.87,
+            "implied_pct": 47.7
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.29,
-            "implied_pct": 27.8
+            "avg_price": 3.39,
+            "implied_pct": 26.3
           }
         ],
         "totals": [
@@ -685,15 +583,29 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.84,
-            "implied_pct": 50.0
+            "avg_price": 1.7,
+            "implied_pct": 27.8
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 1.84,
-            "implied_pct": 50.0
+            "avg_price": 2.06,
+            "implied_pct": 22.9
+          },
+          {
+            "name": "Mais de 2.75 gols",
+            "type": "over",
+            "point": 2.75,
+            "avg_price": 1.94,
+            "implied_pct": 24.3
+          },
+          {
+            "name": "Menos de 2.75 gols",
+            "type": "under",
+            "point": 2.75,
+            "avg_price": 1.89,
+            "implied_pct": 25.0
           }
         ],
         "btts": []
@@ -712,20 +624,20 @@
           {
             "name": "Corinthians",
             "type": "home",
-            "avg_price": 1.57,
-            "implied_pct": 58.3
+            "avg_price": 1.54,
+            "implied_pct": 59.4
           },
           {
             "name": "Grêmio",
             "type": "away",
-            "avg_price": 5.41,
-            "implied_pct": 16.9
+            "avg_price": 5.62,
+            "implied_pct": 16.2
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.69,
-            "implied_pct": 24.8
+            "avg_price": 3.74,
+            "implied_pct": 24.4
           }
         ],
         "totals": [
@@ -733,15 +645,15 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.89,
-            "implied_pct": 48.5
+            "avg_price": 1.9,
+            "implied_pct": 48.2
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 1.78,
-            "implied_pct": 51.5
+            "avg_price": 1.77,
+            "implied_pct": 51.8
           }
         ],
         "btts": []
@@ -767,13 +679,13 @@
             "name": "Vasco da Gama",
             "type": "away",
             "avg_price": 2.5,
-            "implied_pct": 36.5
+            "implied_pct": 36.6
           },
           {
             "name": "Empate",
             "type": "draw",
             "avg_price": 3.16,
-            "implied_pct": 28.9
+            "implied_pct": 28.8
           }
         ],
         "totals": [
@@ -781,15 +693,15 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.93,
-            "implied_pct": 47.6
+            "avg_price": 1.92,
+            "implied_pct": 47.8
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 1.75,
-            "implied_pct": 52.4
+            "avg_price": 1.76,
+            "implied_pct": 52.2
           }
         ],
         "btts": []
@@ -814,7 +726,7 @@
           {
             "name": "Palmeiras-SP",
             "type": "home",
-            "avg_price": 1.94,
+            "avg_price": 1.93,
             "implied_pct": 47.5
           },
           {
@@ -830,14 +742,14 @@
             "type": "over",
             "point": 1.5,
             "avg_price": 1.5,
-            "implied_pct": 20.8
+            "implied_pct": 20.7
           },
           {
             "name": "Menos de 1.5 gols",
             "type": "under",
             "point": 1.5,
-            "avg_price": 2.43,
-            "implied_pct": 12.8
+            "avg_price": 2.42,
+            "implied_pct": 12.9
           },
           {
             "name": "Mais de 2.5 gols",
@@ -884,14 +796,14 @@
           {
             "name": "Chelsea",
             "type": "away",
-            "avg_price": 2.61,
-            "implied_pct": 36.1
+            "avg_price": 2.66,
+            "implied_pct": 35.5
           },
           {
             "name": "Nottingham Forest",
             "type": "home",
-            "avg_price": 2.6,
-            "implied_pct": 36.3
+            "avg_price": 2.56,
+            "implied_pct": 36.9
           },
           {
             "name": "Empate",
@@ -919,7 +831,7 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.74,
+            "avg_price": 1.75,
             "implied_pct": 27.5
           },
           {
@@ -946,20 +858,20 @@
           {
             "name": "Brentford",
             "type": "away",
-            "avg_price": 3.3,
-            "implied_pct": 28.5
+            "avg_price": 3.2,
+            "implied_pct": 29.6
           },
           {
             "name": "Manchester United",
             "type": "home",
-            "avg_price": 2.03,
-            "implied_pct": 46.5
+            "avg_price": 2.09,
+            "implied_pct": 45.2
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.77,
-            "implied_pct": 25.0
+            "avg_price": 3.75,
+            "implied_pct": 25.2
           }
         ],
         "totals": [
@@ -968,14 +880,14 @@
             "type": "over",
             "point": 3.0,
             "avg_price": 1.9,
-            "implied_pct": 16.6
+            "implied_pct": 16.7
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 1.92,
-            "implied_pct": 16.5
+            "avg_price": 1.95,
+            "implied_pct": 16.3
           },
           {
             "name": "Mais de 3.5 gols",
@@ -989,21 +901,21 @@
             "type": "under",
             "point": 3.5,
             "avg_price": 1.59,
-            "implied_pct": 19.9
+            "implied_pct": 20.0
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.54,
-            "implied_pct": 20.5
+            "avg_price": 1.56,
+            "implied_pct": 20.3
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.4,
-            "implied_pct": 13.2
+            "avg_price": 2.37,
+            "implied_pct": 13.4
           }
         ],
         "btts": []
@@ -1022,20 +934,20 @@
           {
             "name": "Coventry City",
             "type": "away",
-            "avg_price": 5.94,
-            "implied_pct": 15.9
+            "avg_price": 6.26,
+            "implied_pct": 15.1
           },
           {
             "name": "Leeds United",
             "type": "home",
-            "avg_price": 1.51,
-            "implied_pct": 62.3
+            "avg_price": 1.47,
+            "implied_pct": 64.1
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 4.33,
-            "implied_pct": 21.8
+            "avg_price": 4.52,
+            "implied_pct": 20.9
           }
         ],
         "totals": [
@@ -1043,29 +955,43 @@
             "name": "Mais de 2.75 gols",
             "type": "over",
             "point": 2.75,
-            "avg_price": 1.93,
-            "implied_pct": 24.8
+            "avg_price": 1.82,
+            "implied_pct": 17.5
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 1.95,
-            "implied_pct": 24.6
+            "avg_price": 2.08,
+            "implied_pct": 15.4
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.71,
-            "implied_pct": 28.1
+            "avg_price": 1.64,
+            "implied_pct": 19.5
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.12,
-            "implied_pct": 22.6
+            "avg_price": 2.23,
+            "implied_pct": 14.3
+          },
+          {
+            "name": "Mais de 3.0 gols",
+            "type": "over",
+            "point": 3.0,
+            "avg_price": 2.06,
+            "implied_pct": 15.5
+          },
+          {
+            "name": "Menos de 3.0 gols",
+            "type": "under",
+            "point": 3.0,
+            "avg_price": 1.79,
+            "implied_pct": 17.8
           }
         ],
         "btts": []
@@ -1085,18 +1011,18 @@
             "name": "Aston Villa",
             "type": "away",
             "avg_price": 1.93,
-            "implied_pct": 48.8
+            "implied_pct": 48.9
           },
           {
             "name": "Ipswich Town",
             "type": "home",
-            "avg_price": 3.55,
-            "implied_pct": 26.6
+            "avg_price": 3.56,
+            "implied_pct": 26.5
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.84,
+            "avg_price": 3.85,
             "implied_pct": 24.6
           }
         ],
@@ -1105,43 +1031,43 @@
             "name": "Mais de 3.0 gols",
             "type": "over",
             "point": 3.0,
-            "avg_price": 1.87,
-            "implied_pct": 16.9
+            "avg_price": 1.88,
+            "implied_pct": 16.8
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 1.95,
-            "implied_pct": 16.2
+            "avg_price": 1.96,
+            "implied_pct": 16.1
           },
           {
             "name": "Mais de 3.5 gols",
             "type": "over",
             "point": 3.5,
-            "avg_price": 2.36,
-            "implied_pct": 13.4
+            "avg_price": 2.35,
+            "implied_pct": 13.5
           },
           {
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 1.57,
+            "avg_price": 1.58,
             "implied_pct": 20.1
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.54,
-            "implied_pct": 20.6
+            "avg_price": 1.53,
+            "implied_pct": 20.7
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.47,
-            "implied_pct": 12.8
+            "avg_price": 2.5,
+            "implied_pct": 12.7
           }
         ],
         "btts": []
@@ -1160,20 +1086,20 @@
           {
             "name": "Everton",
             "type": "home",
-            "avg_price": 3.86,
-            "implied_pct": 24.4
+            "avg_price": 4.07,
+            "implied_pct": 23.2
           },
           {
             "name": "Liverpool",
             "type": "away",
-            "avg_price": 1.89,
-            "implied_pct": 49.9
+            "avg_price": 1.84,
+            "implied_pct": 51.3
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.66,
-            "implied_pct": 25.7
+            "avg_price": 3.7,
+            "implied_pct": 25.5
           }
         ],
         "totals": [
@@ -1181,14 +1107,14 @@
             "name": "Mais de 2.75 gols",
             "type": "over",
             "point": 2.75,
-            "avg_price": 1.88,
-            "implied_pct": 16.9
+            "avg_price": 1.87,
+            "implied_pct": 17.0
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 1.98,
+            "avg_price": 1.99,
             "implied_pct": 16.0
           },
           {
@@ -1196,13 +1122,13 @@
             "type": "over",
             "point": 2.5,
             "avg_price": 1.68,
-            "implied_pct": 18.9
+            "implied_pct": 19.0
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.15,
+            "avg_price": 2.17,
             "implied_pct": 14.7
           },
           {
@@ -1210,14 +1136,14 @@
             "type": "over",
             "point": 3.0,
             "avg_price": 2.14,
-            "implied_pct": 14.8
+            "implied_pct": 14.9
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 1.69,
-            "implied_pct": 18.7
+            "avg_price": 1.73,
+            "implied_pct": 18.4
           }
         ],
         "btts": []
@@ -1236,20 +1162,20 @@
           {
             "name": "Bournemouth",
             "type": "away",
-            "avg_price": 2.57,
+            "avg_price": 2.56,
             "implied_pct": 36.8
           },
           {
             "name": "Fulham",
             "type": "home",
             "avg_price": 2.61,
-            "implied_pct": 36.2
+            "implied_pct": 36.1
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.5,
-            "implied_pct": 27.0
+            "avg_price": 3.47,
+            "implied_pct": 27.2
           }
         ],
         "totals": [
@@ -1257,29 +1183,29 @@
             "name": "Mais de 2.75 gols",
             "type": "over",
             "point": 2.75,
-            "avg_price": 1.94,
-            "implied_pct": 24.5
+            "avg_price": 2.0,
+            "implied_pct": 23.9
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 1.9,
-            "implied_pct": 25.0
+            "avg_price": 1.86,
+            "implied_pct": 25.7
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.72,
-            "implied_pct": 27.7
+            "avg_price": 1.74,
+            "implied_pct": 27.4
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.09,
-            "implied_pct": 22.8
+            "avg_price": 2.06,
+            "implied_pct": 23.1
           }
         ],
         "btts": []
@@ -1299,19 +1225,19 @@
             "name": "Brighton and Hove Albion",
             "type": "home",
             "avg_price": 1.54,
-            "implied_pct": 61.3
+            "implied_pct": 61.2
           },
           {
             "name": "Newcastle United",
             "type": "away",
-            "avg_price": 5.37,
-            "implied_pct": 17.5
+            "avg_price": 5.35,
+            "implied_pct": 17.6
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 4.46,
-            "implied_pct": 21.1
+            "avg_price": 4.45,
+            "implied_pct": 21.2
           }
         ],
         "totals": [
@@ -1319,29 +1245,29 @@
             "name": "Mais de 3.0 gols",
             "type": "over",
             "point": 3.0,
-            "avg_price": 1.83,
+            "avg_price": 1.85,
             "implied_pct": 17.2
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 2.0,
+            "avg_price": 2.01,
             "implied_pct": 15.8
           },
           {
             "name": "Mais de 3.5 gols",
             "type": "over",
             "point": 3.5,
-            "avg_price": 2.33,
-            "implied_pct": 13.6
+            "avg_price": 2.32,
+            "implied_pct": 13.7
           },
           {
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 1.57,
-            "implied_pct": 20.1
+            "avg_price": 1.58,
+            "implied_pct": 20.0
           },
           {
             "name": "Mais de 2.5 gols",
@@ -1355,7 +1281,7 @@
             "type": "under",
             "point": 2.5,
             "avg_price": 2.5,
-            "implied_pct": 12.6
+            "implied_pct": 12.7
           }
         ],
         "btts": []
@@ -1375,18 +1301,18 @@
             "name": "Crystal Palace",
             "type": "home",
             "avg_price": 1.84,
-            "implied_pct": 51.3
+            "implied_pct": 51.1
           },
           {
             "name": "Hull City",
             "type": "away",
-            "avg_price": 3.98,
-            "implied_pct": 23.7
+            "avg_price": 3.95,
+            "implied_pct": 23.9
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.78,
+            "avg_price": 3.77,
             "implied_pct": 25.0
           }
         ],
@@ -1403,21 +1329,21 @@
             "type": "under",
             "point": 2.75,
             "avg_price": 1.88,
-            "implied_pct": 25.3
+            "implied_pct": 25.4
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.71,
-            "implied_pct": 27.9
+            "avg_price": 1.72,
+            "implied_pct": 27.7
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.11,
-            "implied_pct": 22.6
+            "avg_price": 2.1,
+            "implied_pct": 22.7
           }
         ],
         "btts": []
@@ -1436,20 +1362,20 @@
           {
             "name": "Sunderland",
             "type": "home",
-            "avg_price": 3.43,
-            "implied_pct": 27.5
+            "avg_price": 3.51,
+            "implied_pct": 26.9
           },
           {
             "name": "Tottenham Hotspur",
             "type": "away",
-            "avg_price": 2.11,
-            "implied_pct": 44.7
+            "avg_price": 2.08,
+            "implied_pct": 45.3
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.39,
-            "implied_pct": 27.8
+            "avg_price": 3.38,
+            "implied_pct": 27.9
           }
         ],
         "totals": [
@@ -1457,15 +1383,15 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.94,
-            "implied_pct": 49.0
+            "avg_price": 1.96,
+            "implied_pct": 48.5
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 1.86,
-            "implied_pct": 51.0
+            "avg_price": 1.84,
+            "implied_pct": 51.5
           }
         ],
         "btts": []
@@ -1485,19 +1411,19 @@
             "name": "Arsenal",
             "type": "home",
             "avg_price": 1.96,
-            "implied_pct": 48.2
+            "implied_pct": 48.1
           },
           {
             "name": "Manchester City",
             "type": "away",
-            "avg_price": 3.6,
-            "implied_pct": 26.2
+            "avg_price": 3.58,
+            "implied_pct": 26.4
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.69,
-            "implied_pct": 25.6
+            "avg_price": 3.7,
+            "implied_pct": 25.5
           }
         ],
         "totals": [
@@ -1506,42 +1432,28 @@
             "type": "over",
             "point": 2.75,
             "avg_price": 1.96,
-            "implied_pct": 16.2
+            "implied_pct": 24.4
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
             "avg_price": 1.9,
-            "implied_pct": 16.7
+            "implied_pct": 25.1
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
             "avg_price": 1.72,
-            "implied_pct": 18.4
+            "implied_pct": 27.7
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
             "avg_price": 2.1,
-            "implied_pct": 15.1
-          },
-          {
-            "name": "Mais de 3.0 gols",
-            "type": "over",
-            "point": 3.0,
-            "avg_price": 2.15,
-            "implied_pct": 14.7
-          },
-          {
-            "name": "Menos de 3.0 gols",
-            "type": "under",
-            "point": 3.0,
-            "avg_price": 1.68,
-            "implied_pct": 18.9
+            "implied_pct": 22.8
           }
         ],
         "btts": []
@@ -1554,7 +1466,7 @@
       "commence_time": "2026-12-01T20:00:00Z",
       "home_team": "Coventry City",
       "away_team": "Ipswich Town",
-      "bookmaker_count": 18,
+      "bookmaker_count": 19,
       "markets": {
         "h2h": [
           {
@@ -1566,14 +1478,14 @@
           {
             "name": "Ipswich Town",
             "type": "away",
-            "avg_price": 2.92,
-            "implied_pct": 31.9
+            "avg_price": 2.94,
+            "implied_pct": 31.8
           },
           {
             "name": "Empate",
             "type": "draw",
             "avg_price": 3.56,
-            "implied_pct": 26.2
+            "implied_pct": 26.3
           }
         ],
         "totals": [
@@ -1581,29 +1493,29 @@
             "name": "Mais de 2.75 gols",
             "type": "over",
             "point": 2.75,
-            "avg_price": 1.85,
-            "implied_pct": 25.6
+            "avg_price": 1.88,
+            "implied_pct": 25.3
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 1.98,
-            "implied_pct": 24.0
+            "avg_price": 1.96,
+            "implied_pct": 24.3
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.66,
-            "implied_pct": 28.6
+            "avg_price": 1.67,
+            "implied_pct": 28.5
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
             "avg_price": 2.18,
-            "implied_pct": 21.8
+            "implied_pct": 21.9
           }
         ],
         "btts": []
@@ -1629,12 +1541,12 @@
             "name": "Crystal Palace",
             "type": "away",
             "avg_price": 4.61,
-            "implied_pct": 20.3
+            "implied_pct": 20.2
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 4.27,
+            "avg_price": 4.26,
             "implied_pct": 21.9
           }
         ],
@@ -1672,14 +1584,14 @@
             "type": "over",
             "point": 3.25,
             "avg_price": 2.07,
-            "implied_pct": 15.2
+            "implied_pct": 15.3
           },
           {
             "name": "Menos de 3.25 gols",
             "type": "under",
             "point": 3.25,
-            "avg_price": 1.78,
-            "implied_pct": 17.7
+            "avg_price": 1.79,
+            "implied_pct": 17.6
           }
         ],
         "btts": []
@@ -1698,20 +1610,20 @@
           {
             "name": "Hull City",
             "type": "home",
-            "avg_price": 3.91,
-            "implied_pct": 23.8
+            "avg_price": 3.96,
+            "implied_pct": 23.5
           },
           {
             "name": "Nottingham Forest",
             "type": "away",
-            "avg_price": 1.88,
-            "implied_pct": 49.6
+            "avg_price": 1.87,
+            "implied_pct": 49.9
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.52,
-            "implied_pct": 26.5
+            "avg_price": 3.51,
+            "implied_pct": 26.6
           }
         ],
         "totals": [
@@ -1720,14 +1632,14 @@
             "type": "over",
             "point": 2.5,
             "avg_price": 1.9,
-            "implied_pct": 49.8
+            "implied_pct": 49.7
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
             "avg_price": 1.88,
-            "implied_pct": 50.2
+            "implied_pct": 50.3
           }
         ],
         "btts": []
@@ -1746,19 +1658,19 @@
           {
             "name": "Leeds United",
             "type": "away",
-            "avg_price": 5.26,
-            "implied_pct": 17.7
+            "avg_price": 5.24,
+            "implied_pct": 17.8
           },
           {
             "name": "Manchester City",
             "type": "home",
             "avg_price": 1.54,
-            "implied_pct": 60.6
+            "implied_pct": 60.5
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 4.29,
+            "avg_price": 4.28,
             "implied_pct": 21.7
           }
         ],
@@ -1767,43 +1679,43 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.6,
+            "avg_price": 1.58,
             "implied_pct": 19.8
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.35,
-            "implied_pct": 13.4
+            "avg_price": 2.32,
+            "implied_pct": 13.5
           },
           {
             "name": "Mais de 3.5 gols",
             "type": "over",
             "point": 3.5,
-            "avg_price": 2.41,
-            "implied_pct": 13.1
+            "avg_price": 2.3,
+            "implied_pct": 13.6
           },
           {
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 1.51,
-            "implied_pct": 20.9
+            "avg_price": 1.55,
+            "implied_pct": 20.2
           },
           {
             "name": "Mais de 3.0 gols",
             "type": "over",
             "point": 3.0,
-            "avg_price": 1.92,
-            "implied_pct": 16.4
+            "avg_price": 1.94,
+            "implied_pct": 16.2
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 1.92,
-            "implied_pct": 16.4
+            "avg_price": 1.89,
+            "implied_pct": 16.6
           }
         ],
         "btts": []
@@ -1822,20 +1734,20 @@
           {
             "name": "Liverpool",
             "type": "home",
-            "avg_price": 1.46,
-            "implied_pct": 63.9
+            "avg_price": 1.43,
+            "implied_pct": 64.9
           },
           {
             "name": "Sunderland",
             "type": "away",
-            "avg_price": 6.05,
-            "implied_pct": 15.4
+            "avg_price": 6.28,
+            "implied_pct": 14.8
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 4.5,
-            "implied_pct": 20.7
+            "avg_price": 4.59,
+            "implied_pct": 20.3
           }
         ],
         "totals": [
@@ -1843,29 +1755,29 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.61,
-            "implied_pct": 29.5
+            "avg_price": 1.59,
+            "implied_pct": 29.9
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.27,
-            "implied_pct": 21.0
+            "avg_price": 2.31,
+            "implied_pct": 20.6
           },
           {
             "name": "Mais de 2.75 gols",
             "type": "over",
             "point": 2.75,
-            "avg_price": 1.79,
-            "implied_pct": 26.6
+            "avg_price": 1.78,
+            "implied_pct": 26.7
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 2.07,
-            "implied_pct": 23.0
+            "avg_price": 2.08,
+            "implied_pct": 22.8
           }
         ],
         "btts": []
@@ -1884,20 +1796,20 @@
           {
             "name": "Arsenal",
             "type": "away",
-            "avg_price": 1.79,
-            "implied_pct": 52.3
+            "avg_price": 1.78,
+            "implied_pct": 52.5
           },
           {
             "name": "Brentford",
             "type": "home",
-            "avg_price": 4.18,
-            "implied_pct": 22.3
+            "avg_price": 4.2,
+            "implied_pct": 22.2
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.67,
-            "implied_pct": 25.4
+            "avg_price": 3.68,
+            "implied_pct": 25.3
           }
         ],
         "totals": [
@@ -1947,19 +1859,19 @@
             "name": "Aston Villa",
             "type": "home",
             "avg_price": 1.96,
-            "implied_pct": 47.7
+            "implied_pct": 47.5
           },
           {
             "name": "Everton",
             "type": "away",
             "avg_price": 3.53,
-            "implied_pct": 26.4
+            "implied_pct": 26.5
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.6,
-            "implied_pct": 25.9
+            "avg_price": 3.58,
+            "implied_pct": 26.0
           }
         ],
         "totals": [
@@ -2009,13 +1921,13 @@
             "name": "Bournemouth",
             "type": "home",
             "avg_price": 2.4,
-            "implied_pct": 38.8
+            "implied_pct": 38.9
           },
           {
             "name": "Brighton and Hove Albion",
             "type": "away",
             "avg_price": 2.69,
-            "implied_pct": 34.7
+            "implied_pct": 34.6
           },
           {
             "name": "Empate",
@@ -2082,8 +1994,8 @@
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.74,
-            "implied_pct": 25.0
+            "avg_price": 3.72,
+            "implied_pct": 25.1
           }
         ],
         "totals": [
@@ -2113,21 +2025,21 @@
             "type": "under",
             "point": 3.5,
             "avg_price": 1.63,
-            "implied_pct": 19.3
+            "implied_pct": 19.4
           },
           {
             "name": "Mais de 3.25 gols",
             "type": "over",
             "point": 3.25,
-            "avg_price": 1.96,
-            "implied_pct": 16.1
+            "avg_price": 1.97,
+            "implied_pct": 16.0
           },
           {
             "name": "Menos de 3.25 gols",
             "type": "under",
             "point": 3.25,
-            "avg_price": 1.88,
-            "implied_pct": 16.8
+            "avg_price": 1.86,
+            "implied_pct": 17.0
           }
         ],
         "btts": []
@@ -2146,14 +2058,14 @@
           {
             "name": "Fulham",
             "type": "away",
-            "avg_price": 3.98,
-            "implied_pct": 23.4
+            "avg_price": 4.0,
+            "implied_pct": 23.3
           },
           {
             "name": "Tottenham Hotspur",
             "type": "home",
             "avg_price": 1.82,
-            "implied_pct": 51.3
+            "implied_pct": 51.4
           },
           {
             "name": "Empate",
@@ -2167,7 +2079,7 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.74,
+            "avg_price": 1.75,
             "implied_pct": 27.2
           },
           {
@@ -2175,7 +2087,7 @@
             "type": "under",
             "point": 2.5,
             "avg_price": 2.04,
-            "implied_pct": 23.2
+            "implied_pct": 23.3
           },
           {
             "name": "Mais de 2.75 gols",
@@ -2196,414 +2108,76 @@
       }
     },
     {
-      "id": "e422af92d1fc06c0a330838c1c2f2e08",
-      "league_key": "soccer_uefa_champs_league",
-      "league_name": "Champions League",
-      "commence_time": "2026-11-24T17:45:00Z",
-      "home_team": "Galatasaray",
-      "away_team": "Aston Villa",
-      "bookmaker_count": 23,
-      "markets": {
-        "h2h": [
-          {
-            "name": "Aston Villa",
-            "type": "away",
-            "avg_price": 2.21,
-            "implied_pct": 42.9
-          },
-          {
-            "name": "Galatasaray",
-            "type": "home",
-            "avg_price": 2.89,
-            "implied_pct": 32.8
-          },
-          {
-            "name": "Empate",
-            "type": "draw",
-            "avg_price": 3.89,
-            "implied_pct": 24.3
-          }
-        ],
-        "totals": [
-          {
-            "name": "Mais de 3.5 gols",
-            "type": "over",
-            "point": 3.5,
-            "avg_price": 1.92,
-            "implied_pct": 24.8
-          },
-          {
-            "name": "Menos de 3.5 gols",
-            "type": "under",
-            "point": 3.5,
-            "avg_price": 1.88,
-            "implied_pct": 25.2
-          },
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.36,
-            "implied_pct": 34.8
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 3.13,
-            "implied_pct": 15.2
-          }
-        ],
-        "btts": []
-      }
-    },
-    {
-      "id": "50b80f3ebd38bf63663b11ae0afc575b",
-      "league_key": "soccer_uefa_champs_league",
-      "league_name": "Champions League",
-      "commence_time": "2026-11-24T17:45:00Z",
-      "home_team": "Bodø/Glimt",
-      "away_team": "LASK",
-      "bookmaker_count": 23,
-      "markets": {
-        "h2h": [
-          {
-            "name": "Bodø/Glimt",
-            "type": "home",
-            "avg_price": 1.49,
-            "implied_pct": 63.7
-          },
-          {
-            "name": "LASK",
-            "type": "away",
-            "avg_price": 5.4,
-            "implied_pct": 17.5
-          },
-          {
-            "name": "Empate",
-            "type": "draw",
-            "avg_price": 5.05,
-            "implied_pct": 18.7
-          }
-        ],
-        "totals": [
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.27,
-            "implied_pct": 18.9
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 3.75,
-            "implied_pct": 6.4
-          },
-          {
-            "name": "Mais de 3.75 gols",
-            "type": "over",
-            "point": 3.75,
-            "avg_price": 1.93,
-            "implied_pct": 12.4
-          },
-          {
-            "name": "Menos de 3.75 gols",
-            "type": "under",
-            "point": 3.75,
-            "avg_price": 1.96,
-            "implied_pct": 12.2
-          },
-          {
-            "name": "Mais de 3.5 gols",
-            "type": "over",
-            "point": 3.5,
-            "avg_price": 1.71,
-            "implied_pct": 14.0
-          },
-          {
-            "name": "Menos de 3.5 gols",
-            "type": "under",
-            "point": 3.5,
-            "avg_price": 2.11,
-            "implied_pct": 11.3
-          },
-          {
-            "name": "Mais de 4.0 gols",
-            "type": "over",
-            "point": 4.0,
-            "avg_price": 2.16,
-            "implied_pct": 11.1
-          },
-          {
-            "name": "Menos de 4.0 gols",
-            "type": "under",
-            "point": 4.0,
-            "avg_price": 1.75,
-            "implied_pct": 13.7
-          }
-        ],
-        "btts": []
-      }
-    },
-    {
-      "id": "ba719e378ac366262013bdb51a06aa6f",
-      "league_key": "soccer_uefa_champs_league",
-      "league_name": "Champions League",
-      "commence_time": "2026-11-24T20:00:00Z",
-      "home_team": "Como",
-      "away_team": "AEK Athens",
-      "bookmaker_count": 23,
-      "markets": {
-        "h2h": [
-          {
-            "name": "AEK Athens",
-            "type": "away",
-            "avg_price": 10.18,
-            "implied_pct": 9.3
-          },
-          {
-            "name": "Como",
-            "type": "home",
-            "avg_price": 1.25,
-            "implied_pct": 75.9
-          },
-          {
-            "name": "Empate",
-            "type": "draw",
-            "avg_price": 6.43,
-            "implied_pct": 14.8
-          }
-        ],
-        "totals": [
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.32,
-            "implied_pct": 36.0
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 3.37,
-            "implied_pct": 14.1
-          },
-          {
-            "name": "Mais de 3.5 gols",
-            "type": "over",
-            "point": 3.5,
-            "avg_price": 1.85,
-            "implied_pct": 25.7
-          },
-          {
-            "name": "Menos de 3.5 gols",
-            "type": "under",
-            "point": 3.5,
-            "avg_price": 1.96,
-            "implied_pct": 24.2
-          }
-        ],
-        "btts": []
-      }
-    },
-    {
       "id": "aee4e3c225603397ab52de3d066b566b",
       "league_key": "soccer_uefa_champs_league",
       "league_name": "Champions League",
       "commence_time": "2026-11-24T20:00:00Z",
       "home_team": "Arsenal",
       "away_team": "Borussia Dortmund",
-      "bookmaker_count": 23,
+      "bookmaker_count": 17,
       "markets": {
         "h2h": [
           {
             "name": "Arsenal",
             "type": "home",
-            "avg_price": 1.39,
-            "implied_pct": 67.9
+            "avg_price": 1.2,
+            "implied_pct": 77.2
           },
           {
             "name": "Borussia Dortmund",
             "type": "away",
-            "avg_price": 7.44,
-            "implied_pct": 12.7
+            "avg_price": 14.22,
+            "implied_pct": 6.5
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 4.89,
-            "implied_pct": 19.4
+            "avg_price": 5.69,
+            "implied_pct": 16.3
           }
         ],
         "totals": [
           {
-            "name": "Mais de 3.0 gols",
+            "name": "Mais de 2.75 gols",
             "type": "over",
-            "point": 3.0,
+            "point": 2.75,
             "avg_price": 1.98,
-            "implied_pct": 24.0
-          },
-          {
-            "name": "Menos de 3.0 gols",
-            "type": "under",
-            "point": 3.0,
-            "avg_price": 1.87,
-            "implied_pct": 25.5
-          },
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.62,
-            "implied_pct": 29.5
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 2.28,
-            "implied_pct": 20.9
-          }
-        ],
-        "btts": []
-      }
-    },
-    {
-      "id": "9a2ebad454db4ab3d53b89e96c79847a",
-      "league_key": "soccer_uefa_champs_league",
-      "league_name": "Champions League",
-      "commence_time": "2026-11-24T20:00:00Z",
-      "home_team": "Feyenoord",
-      "away_team": "Porto",
-      "bookmaker_count": 23,
-      "markets": {
-        "h2h": [
-          {
-            "name": "Feyenoord",
-            "type": "home",
-            "avg_price": 2.88,
-            "implied_pct": 32.9
-          },
-          {
-            "name": "Porto",
-            "type": "away",
-            "avg_price": 2.3,
-            "implied_pct": 41.2
-          },
-          {
-            "name": "Empate",
-            "type": "draw",
-            "avg_price": 3.65,
-            "implied_pct": 25.9
-          }
-        ],
-        "totals": [
-          {
-            "name": "Mais de 3.0 gols",
-            "type": "over",
-            "point": 3.0,
-            "avg_price": 1.99,
             "implied_pct": 16.0
           },
           {
+            "name": "Menos de 2.75 gols",
+            "type": "under",
+            "point": 2.75,
+            "avg_price": 1.9,
+            "implied_pct": 16.6
+          },
+          {
+            "name": "Mais de 2.5 gols",
+            "type": "over",
+            "point": 2.5,
+            "avg_price": 1.63,
+            "implied_pct": 19.4
+          },
+          {
+            "name": "Menos de 2.5 gols",
+            "type": "under",
+            "point": 2.5,
+            "avg_price": 2.11,
+            "implied_pct": 15.0
+          },
+          {
+            "name": "Mais de 3.0 gols",
+            "type": "over",
+            "point": 3.0,
+            "avg_price": 2.4,
+            "implied_pct": 13.2
+          },
+          {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 1.86,
-            "implied_pct": 17.1
-          },
-          {
-            "name": "Mais de 3.5 gols",
-            "type": "over",
-            "point": 3.5,
-            "avg_price": 2.51,
-            "implied_pct": 12.7
-          },
-          {
-            "name": "Menos de 3.5 gols",
-            "type": "under",
-            "point": 3.5,
-            "avg_price": 1.54,
-            "implied_pct": 20.6
-          },
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.61,
-            "implied_pct": 19.7
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 2.28,
-            "implied_pct": 13.9
-          }
-        ],
-        "btts": []
-      }
-    },
-    {
-      "id": "b9f00a4d399ec661e733857c9d5fb2dc",
-      "league_key": "soccer_uefa_champs_league",
-      "league_name": "Champions League",
-      "commence_time": "2026-11-24T20:00:00Z",
-      "home_team": "Manchester City",
-      "away_team": "Napoli",
-      "bookmaker_count": 23,
-      "markets": {
-        "h2h": [
-          {
-            "name": "Manchester City",
-            "type": "home",
-            "avg_price": 1.27,
-            "implied_pct": 74.5
-          },
-          {
-            "name": "Napoli",
-            "type": "away",
-            "avg_price": 9.16,
-            "implied_pct": 10.4
-          },
-          {
-            "name": "Empate",
-            "type": "draw",
-            "avg_price": 6.28,
-            "implied_pct": 15.1
-          }
-        ],
-        "totals": [
-          {
-            "name": "Mais de 3.5 gols",
-            "type": "over",
-            "point": 3.5,
-            "avg_price": 1.82,
-            "implied_pct": 26.2
-          },
-          {
-            "name": "Menos de 3.5 gols",
-            "type": "under",
-            "point": 3.5,
-            "avg_price": 2.01,
-            "implied_pct": 23.7
-          },
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.31,
-            "implied_pct": 36.2
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 3.41,
-            "implied_pct": 13.9
+            "avg_price": 1.6,
+            "implied_pct": 19.8
           }
         ],
         "btts": []
@@ -2616,70 +2190,56 @@
       "commence_time": "2026-11-24T20:00:00Z",
       "home_team": "Real Madrid",
       "away_team": "PSV Eindhoven",
-      "bookmaker_count": 23,
+      "bookmaker_count": 17,
       "markets": {
         "h2h": [
           {
             "name": "PSV Eindhoven",
             "type": "away",
-            "avg_price": 12.86,
-            "implied_pct": 7.4
+            "avg_price": 4.03,
+            "implied_pct": 22.7
           },
           {
             "name": "Real Madrid",
             "type": "home",
-            "avg_price": 1.16,
-            "implied_pct": 81.8
+            "avg_price": 1.77,
+            "implied_pct": 51.7
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 8.83,
-            "implied_pct": 10.8
+            "avg_price": 3.58,
+            "implied_pct": 25.6
           }
         ],
         "totals": [
           {
-            "name": "Mais de 4.25 gols",
+            "name": "Mais de 3.5 gols",
             "type": "over",
-            "point": 4.25,
-            "avg_price": 1.81,
-            "implied_pct": 17.5
+            "point": 3.5,
+            "avg_price": 1.86,
+            "implied_pct": 25.3
           },
           {
-            "name": "Menos de 4.25 gols",
+            "name": "Menos de 3.5 gols",
             "type": "under",
-            "point": 4.25,
-            "avg_price": 2.05,
-            "implied_pct": 15.5
+            "point": 3.5,
+            "avg_price": 1.87,
+            "implied_pct": 25.2
           },
           {
-            "name": "Mais de 4.5 gols",
+            "name": "Mais de 4.0 gols",
             "type": "over",
-            "point": 4.5,
-            "avg_price": 2.04,
-            "implied_pct": 15.6
-          },
-          {
-            "name": "Menos de 4.5 gols",
-            "type": "under",
-            "point": 4.5,
-            "avg_price": 1.79,
-            "implied_pct": 17.8
-          },
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.15,
+            "point": 4.0,
+            "avg_price": 1.7,
             "implied_pct": 27.6
           },
           {
-            "name": "Menos de 2.5 gols",
+            "name": "Menos de 4.0 gols",
             "type": "under",
-            "point": 2.5,
-            "avg_price": 5.21,
-            "implied_pct": 6.1
+            "point": 4.0,
+            "avg_price": 2.15,
+            "implied_pct": 21.9
           }
         ],
         "btts": []
@@ -2692,70 +2252,70 @@
       "commence_time": "2026-11-24T20:00:00Z",
       "home_team": "RB Leipzig",
       "away_team": "RC Lens",
-      "bookmaker_count": 23,
+      "bookmaker_count": 17,
       "markets": {
         "h2h": [
           {
             "name": "RB Leipzig",
             "type": "home",
-            "avg_price": 1.38,
-            "implied_pct": 68.7
+            "avg_price": 1.02,
+            "implied_pct": 93.4
           },
           {
             "name": "RC Lens",
             "type": "away",
-            "avg_price": 6.64,
-            "implied_pct": 14.3
+            "avg_price": 62.67,
+            "implied_pct": 1.5
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 5.6,
-            "implied_pct": 16.9
+            "avg_price": 18.73,
+            "implied_pct": 5.1
           }
         ],
         "totals": [
           {
+            "name": "Mais de 4.0 gols",
+            "type": "over",
+            "point": 4.0,
+            "avg_price": 1.84,
+            "implied_pct": 16.9
+          },
+          {
+            "name": "Menos de 4.0 gols",
+            "type": "under",
+            "point": 4.0,
+            "avg_price": 2.0,
+            "implied_pct": 15.6
+          },
+          {
             "name": "Mais de 3.5 gols",
             "type": "over",
             "point": 3.5,
-            "avg_price": 1.77,
-            "implied_pct": 18.1
+            "avg_price": 1.46,
+            "implied_pct": 21.4
           },
           {
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 2.05,
-            "implied_pct": 15.6
+            "avg_price": 2.42,
+            "implied_pct": 12.9
           },
           {
-            "name": "Mais de 3.75 gols",
+            "name": "Mais de 4.5 gols",
             "type": "over",
-            "point": 3.75,
-            "avg_price": 1.99,
-            "implied_pct": 16.0
+            "point": 4.5,
+            "avg_price": 2.28,
+            "implied_pct": 13.7
           },
           {
-            "name": "Menos de 3.75 gols",
+            "name": "Menos de 4.5 gols",
             "type": "under",
-            "point": 3.75,
-            "avg_price": 1.9,
-            "implied_pct": 16.8
-          },
-          {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.29,
-            "implied_pct": 24.7
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 3.6,
-            "implied_pct": 8.9
+            "point": 4.5,
+            "avg_price": 1.6,
+            "implied_pct": 19.5
           }
         ],
         "btts": []
@@ -2768,56 +2328,270 @@
       "commence_time": "2026-11-24T20:00:00Z",
       "home_team": "ŠK Slovan Bratislava",
       "away_team": "Real Betis",
-      "bookmaker_count": 23,
+      "bookmaker_count": 17,
       "markets": {
         "h2h": [
           {
             "name": "Real Betis",
             "type": "away",
-            "avg_price": 1.24,
-            "implied_pct": 76.3
+            "avg_price": 1.21,
+            "implied_pct": 76.6
           },
           {
             "name": "ŠK Slovan Bratislava",
             "type": "home",
-            "avg_price": 10.45,
-            "implied_pct": 9.1
+            "avg_price": 13.65,
+            "implied_pct": 6.8
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 6.52,
-            "implied_pct": 14.6
+            "avg_price": 5.57,
+            "implied_pct": 16.6
           }
         ],
         "totals": [
           {
-            "name": "Mais de 3.5 gols",
+            "name": "Mais de 2.75 gols",
             "type": "over",
-            "point": 3.5,
-            "avg_price": 1.92,
-            "implied_pct": 24.7
+            "point": 2.75,
+            "avg_price": 1.85,
+            "implied_pct": 17.1
           },
           {
-            "name": "Menos de 3.5 gols",
+            "name": "Menos de 2.75 gols",
             "type": "under",
-            "point": 3.5,
-            "avg_price": 1.89,
-            "implied_pct": 25.2
+            "point": 2.75,
+            "avg_price": 2.01,
+            "implied_pct": 15.7
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.34,
-            "implied_pct": 35.6
+            "avg_price": 1.59,
+            "implied_pct": 19.8
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 3.27,
-            "implied_pct": 14.5
+            "avg_price": 2.19,
+            "implied_pct": 14.4
+          },
+          {
+            "name": "Mais de 3.0 gols",
+            "type": "over",
+            "point": 3.0,
+            "avg_price": 2.2,
+            "implied_pct": 14.4
+          },
+          {
+            "name": "Menos de 3.0 gols",
+            "type": "under",
+            "point": 3.0,
+            "avg_price": 1.7,
+            "implied_pct": 18.6
+          }
+        ],
+        "btts": []
+      }
+    },
+    {
+      "id": "9a2ebad454db4ab3d53b89e96c79847a",
+      "league_key": "soccer_uefa_champs_league",
+      "league_name": "Champions League",
+      "commence_time": "2026-11-24T20:01:00Z",
+      "home_team": "Feyenoord",
+      "away_team": "Porto",
+      "bookmaker_count": 17,
+      "markets": {
+        "h2h": [
+          {
+            "name": "Feyenoord",
+            "type": "home",
+            "avg_price": 8.67,
+            "implied_pct": 10.6
+          },
+          {
+            "name": "Porto",
+            "type": "away",
+            "avg_price": 1.39,
+            "implied_pct": 66.3
+          },
+          {
+            "name": "Empate",
+            "type": "draw",
+            "avg_price": 4.0,
+            "implied_pct": 23.0
+          }
+        ],
+        "totals": [
+          {
+            "name": "Mais de 2.5 gols",
+            "type": "over",
+            "point": 2.5,
+            "avg_price": 1.9,
+            "implied_pct": 24.9
+          },
+          {
+            "name": "Menos de 2.5 gols",
+            "type": "under",
+            "point": 2.5,
+            "avg_price": 1.83,
+            "implied_pct": 25.7
+          },
+          {
+            "name": "Mais de 3.5 gols",
+            "type": "over",
+            "point": 3.5,
+            "avg_price": 2.1,
+            "implied_pct": 22.5
+          },
+          {
+            "name": "Menos de 3.5 gols",
+            "type": "under",
+            "point": 3.5,
+            "avg_price": 1.75,
+            "implied_pct": 26.9
+          }
+        ],
+        "btts": []
+      }
+    },
+    {
+      "id": "b9f00a4d399ec661e733857c9d5fb2dc",
+      "league_key": "soccer_uefa_champs_league",
+      "league_name": "Champions League",
+      "commence_time": "2026-11-24T20:01:00Z",
+      "home_team": "Manchester City",
+      "away_team": "Napoli",
+      "bookmaker_count": 17,
+      "markets": {
+        "h2h": [
+          {
+            "name": "Manchester City",
+            "type": "home",
+            "avg_price": 1.5,
+            "implied_pct": 61.4
+          },
+          {
+            "name": "Napoli",
+            "type": "away",
+            "avg_price": 7.04,
+            "implied_pct": 13.1
+          },
+          {
+            "name": "Empate",
+            "type": "draw",
+            "avg_price": 3.61,
+            "implied_pct": 25.5
+          }
+        ],
+        "totals": [
+          {
+            "name": "Mais de 2.0 gols",
+            "type": "over",
+            "point": 2.0,
+            "avg_price": 1.93,
+            "implied_pct": 16.0
+          },
+          {
+            "name": "Menos de 2.0 gols",
+            "type": "under",
+            "point": 2.0,
+            "avg_price": 1.9,
+            "implied_pct": 16.3
+          },
+          {
+            "name": "Mais de 2.5 gols",
+            "type": "over",
+            "point": 2.5,
+            "avg_price": 2.49,
+            "implied_pct": 12.4
+          },
+          {
+            "name": "Menos de 2.5 gols",
+            "type": "under",
+            "point": 2.5,
+            "avg_price": 1.44,
+            "implied_pct": 21.5
+          },
+          {
+            "name": "Mais de 1.5 gols",
+            "type": "over",
+            "point": 1.5,
+            "avg_price": 1.48,
+            "implied_pct": 20.9
+          },
+          {
+            "name": "Menos de 1.5 gols",
+            "type": "under",
+            "point": 1.5,
+            "avg_price": 2.42,
+            "implied_pct": 12.8
+          }
+        ],
+        "btts": []
+      }
+    },
+    {
+      "id": "ba719e378ac366262013bdb51a06aa6f",
+      "league_key": "soccer_uefa_champs_league",
+      "league_name": "Champions League",
+      "commence_time": "2026-11-24T20:02:00Z",
+      "home_team": "Como",
+      "away_team": "AEK Athens",
+      "bookmaker_count": 17,
+      "markets": {
+        "h2h": [
+          {
+            "name": "AEK Athens",
+            "type": "away",
+            "avg_price": 7.66,
+            "implied_pct": 12.0
+          },
+          {
+            "name": "Como",
+            "type": "home",
+            "avg_price": 1.47,
+            "implied_pct": 62.5
+          },
+          {
+            "name": "Empate",
+            "type": "draw",
+            "avg_price": 3.62,
+            "implied_pct": 25.5
+          }
+        ],
+        "totals": [
+          {
+            "name": "Mais de 1.5 gols",
+            "type": "over",
+            "point": 1.5,
+            "avg_price": 1.49,
+            "implied_pct": 31.8
+          },
+          {
+            "name": "Menos de 1.5 gols",
+            "type": "under",
+            "point": 1.5,
+            "avg_price": 2.39,
+            "implied_pct": 19.8
+          },
+          {
+            "name": "Mais de 2.0 gols",
+            "type": "over",
+            "point": 2.0,
+            "avg_price": 1.85,
+            "implied_pct": 25.6
+          },
+          {
+            "name": "Menos de 2.0 gols",
+            "type": "under",
+            "point": 2.0,
+            "avg_price": 2.08,
+            "implied_pct": 22.8
           }
         ],
         "btts": []
@@ -2837,19 +2611,19 @@
             "name": "Barcelona",
             "type": "away",
             "avg_price": 1.08,
-            "implied_pct": 88.2
+            "implied_pct": 88.4
           },
           {
             "name": "Sabah FK",
             "type": "home",
-            "avg_price": 21.35,
-            "implied_pct": 4.5
+            "avg_price": 22.4,
+            "implied_pct": 4.3
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 12.95,
-            "implied_pct": 7.4
+            "avg_price": 12.99,
+            "implied_pct": 7.3
           }
         ],
         "totals": [
@@ -2857,15 +2631,15 @@
             "name": "Mais de 4.5 gols",
             "type": "over",
             "point": 4.5,
-            "avg_price": 1.7,
-            "implied_pct": 14.0
+            "avg_price": 1.69,
+            "implied_pct": 14.1
           },
           {
             "name": "Menos de 4.5 gols",
             "type": "under",
             "point": 4.5,
-            "avg_price": 2.13,
-            "implied_pct": 11.2
+            "avg_price": 2.15,
+            "implied_pct": 11.1
           },
           {
             "name": "Mais de 2.5 gols",
@@ -2878,22 +2652,22 @@
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 6.94,
-            "implied_pct": 3.4
+            "avg_price": 6.86,
+            "implied_pct": 3.5
           },
           {
             "name": "Mais de 4.75 gols",
             "type": "over",
             "point": 4.75,
-            "avg_price": 1.86,
-            "implied_pct": 12.8
+            "avg_price": 1.9,
+            "implied_pct": 12.5
           },
           {
             "name": "Menos de 4.75 gols",
             "type": "under",
             "point": 4.75,
-            "avg_price": 1.98,
-            "implied_pct": 12.1
+            "avg_price": 1.94,
+            "implied_pct": 12.3
           },
           {
             "name": "Mais de 5.0 gols",
@@ -2926,64 +2700,78 @@
           {
             "name": "Slavia Praha",
             "type": "home",
-            "avg_price": 3.09,
-            "implied_pct": 30.7
+            "avg_price": 3.05,
+            "implied_pct": 31.0
           },
           {
             "name": "Villarreal",
             "type": "away",
-            "avg_price": 2.13,
-            "implied_pct": 44.5
+            "avg_price": 2.14,
+            "implied_pct": 44.3
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.82,
-            "implied_pct": 24.8
+            "avg_price": 3.83,
+            "implied_pct": 24.7
           }
         ],
         "totals": [
           {
-            "name": "Mais de 2.5 gols",
-            "type": "over",
-            "point": 2.5,
-            "avg_price": 1.52,
-            "implied_pct": 20.8
-          },
-          {
-            "name": "Menos de 2.5 gols",
-            "type": "under",
-            "point": 2.5,
-            "avg_price": 2.48,
-            "implied_pct": 12.7
-          },
-          {
             "name": "Mais de 3.5 gols",
             "type": "over",
             "point": 3.5,
-            "avg_price": 2.28,
-            "implied_pct": 13.9
+            "avg_price": 2.3,
+            "implied_pct": 10.4
           },
           {
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 1.61,
-            "implied_pct": 19.6
+            "avg_price": 1.6,
+            "implied_pct": 14.9
+          },
+          {
+            "name": "Mais de 2.5 gols",
+            "type": "over",
+            "point": 2.5,
+            "avg_price": 1.47,
+            "implied_pct": 16.2
+          },
+          {
+            "name": "Menos de 2.5 gols",
+            "type": "under",
+            "point": 2.5,
+            "avg_price": 2.66,
+            "implied_pct": 9.0
+          },
+          {
+            "name": "Mais de 3.25 gols",
+            "type": "over",
+            "point": 3.25,
+            "avg_price": 1.99,
+            "implied_pct": 11.9
+          },
+          {
+            "name": "Menos de 3.25 gols",
+            "type": "under",
+            "point": 3.25,
+            "avg_price": 1.86,
+            "implied_pct": 12.8
           },
           {
             "name": "Mais de 3.0 gols",
             "type": "over",
             "point": 3.0,
             "avg_price": 1.82,
-            "implied_pct": 17.3
+            "implied_pct": 13.1
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 2.02,
-            "implied_pct": 15.6
+            "avg_price": 2.04,
+            "implied_pct": 11.7
           }
         ],
         "btts": []
@@ -3002,20 +2790,20 @@
           {
             "name": "AS Roma",
             "type": "away",
-            "avg_price": 6.67,
-            "implied_pct": 14.2
+            "avg_price": 6.38,
+            "implied_pct": 14.9
           },
           {
             "name": "Paris Saint Germain",
             "type": "home",
-            "avg_price": 1.41,
-            "implied_pct": 67.4
+            "avg_price": 1.43,
+            "implied_pct": 66.5
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 5.17,
-            "implied_pct": 18.3
+            "avg_price": 5.1,
+            "implied_pct": 18.6
           }
         ],
         "totals": [
@@ -3023,29 +2811,29 @@
             "name": "Mais de 3.5 gols",
             "type": "over",
             "point": 3.5,
-            "avg_price": 1.85,
-            "implied_pct": 25.6
+            "avg_price": 1.82,
+            "implied_pct": 26.1
           },
           {
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 1.94,
-            "implied_pct": 24.4
+            "avg_price": 1.99,
+            "implied_pct": 23.9
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.33,
-            "implied_pct": 35.8
+            "avg_price": 1.32,
+            "implied_pct": 36.0
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 3.34,
-            "implied_pct": 14.2
+            "avg_price": 3.37,
+            "implied_pct": 14.1
           }
         ],
         "btts": []
@@ -3065,18 +2853,18 @@
             "name": "Atlético Madrid",
             "type": "home",
             "avg_price": 1.1,
-            "implied_pct": 86.8
+            "implied_pct": 86.6
           },
           {
             "name": "Viking FK",
             "type": "away",
-            "avg_price": 22.56,
-            "implied_pct": 4.2
+            "avg_price": 21.98,
+            "implied_pct": 4.3
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 10.61,
+            "avg_price": 10.51,
             "implied_pct": 9.0
           }
         ],
@@ -3092,7 +2880,7 @@
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 2.14,
+            "avg_price": 2.16,
             "implied_pct": 11.1
           },
           {
@@ -3107,14 +2895,14 @@
             "type": "under",
             "point": 3.75,
             "avg_price": 2.06,
-            "implied_pct": 11.6
+            "implied_pct": 11.5
           },
           {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
             "avg_price": 1.24,
-            "implied_pct": 19.2
+            "implied_pct": 19.3
           },
           {
             "name": "Menos de 2.5 gols",
@@ -3127,15 +2915,15 @@
             "name": "Mais de 4.0 gols",
             "type": "over",
             "point": 4.0,
-            "avg_price": 2.04,
-            "implied_pct": 11.6
+            "avg_price": 2.02,
+            "implied_pct": 11.8
           },
           {
             "name": "Menos de 4.0 gols",
             "type": "under",
             "point": 4.0,
-            "avg_price": 1.81,
-            "implied_pct": 13.2
+            "avg_price": 1.83,
+            "implied_pct": 13.0
           }
         ],
         "btts": []
@@ -3154,64 +2942,64 @@
           {
             "name": "Bayern Munich",
             "type": "away",
-            "avg_price": 1.6,
-            "implied_pct": 59.2
+            "avg_price": 1.63,
+            "implied_pct": 58.1
           },
           {
             "name": "Lille",
             "type": "home",
-            "avg_price": 5.05,
-            "implied_pct": 18.7
+            "avg_price": 5.01,
+            "implied_pct": 18.9
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 4.29,
-            "implied_pct": 22.1
+            "avg_price": 4.14,
+            "implied_pct": 22.9
           }
         ],
         "totals": [
           {
-            "name": "Mais de 3.5 gols",
-            "type": "over",
-            "point": 3.5,
-            "avg_price": 2.33,
-            "implied_pct": 13.6
-          },
-          {
-            "name": "Menos de 3.5 gols",
-            "type": "under",
-            "point": 3.5,
-            "avg_price": 1.58,
-            "implied_pct": 20.0
-          },
-          {
-            "name": "Mais de 3.0 gols",
-            "type": "over",
-            "point": 3.0,
-            "avg_price": 1.9,
-            "implied_pct": 16.7
-          },
-          {
-            "name": "Menos de 3.0 gols",
-            "type": "under",
-            "point": 3.0,
-            "avg_price": 1.93,
-            "implied_pct": 16.4
-          },
-          {
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.56,
-            "implied_pct": 20.3
+            "avg_price": 1.59,
+            "implied_pct": 19.9
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.45,
-            "implied_pct": 13.0
+            "avg_price": 2.34,
+            "implied_pct": 13.5
+          },
+          {
+            "name": "Mais de 3.5 gols",
+            "type": "over",
+            "point": 3.5,
+            "avg_price": 2.41,
+            "implied_pct": 13.1
+          },
+          {
+            "name": "Menos de 3.5 gols",
+            "type": "under",
+            "point": 3.5,
+            "avg_price": 1.54,
+            "implied_pct": 20.6
+          },
+          {
+            "name": "Mais de 3.0 gols",
+            "type": "over",
+            "point": 3.0,
+            "avg_price": 2.03,
+            "implied_pct": 15.6
+          },
+          {
+            "name": "Menos de 3.0 gols",
+            "type": "under",
+            "point": 3.0,
+            "avg_price": 1.83,
+            "implied_pct": 17.3
           }
         ],
         "btts": []
@@ -3230,20 +3018,20 @@
           {
             "name": "Club Brugge",
             "type": "home",
-            "avg_price": 4.42,
+            "avg_price": 4.43,
             "implied_pct": 21.4
           },
           {
             "name": "Liverpool",
             "type": "away",
             "avg_price": 1.64,
-            "implied_pct": 57.8
+            "implied_pct": 58.0
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 4.57,
-            "implied_pct": 20.8
+            "avg_price": 4.62,
+            "implied_pct": 20.6
           }
         ],
         "totals": [
@@ -3265,15 +3053,15 @@
             "name": "Mais de 3.75 gols",
             "type": "over",
             "point": 3.75,
-            "avg_price": 1.93,
-            "implied_pct": 16.5
+            "avg_price": 1.89,
+            "implied_pct": 16.9
           },
           {
             "name": "Menos de 3.75 gols",
             "type": "under",
             "point": 3.75,
-            "avg_price": 1.96,
-            "implied_pct": 16.3
+            "avg_price": 2.0,
+            "implied_pct": 15.9
           },
           {
             "name": "Mais de 3.5 gols",
@@ -3286,7 +3074,7 @@
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 2.06,
+            "avg_price": 2.05,
             "implied_pct": 15.5
           }
         ],
@@ -3306,19 +3094,19 @@
           {
             "name": "Fenerbahce",
             "type": "away",
-            "avg_price": 2.58,
-            "implied_pct": 36.7
+            "avg_price": 2.4,
+            "implied_pct": 39.4
           },
           {
             "name": "Shakhtar Donetsk",
             "type": "home",
-            "avg_price": 2.61,
-            "implied_pct": 36.2
+            "avg_price": 2.82,
+            "implied_pct": 33.6
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 3.48,
+            "avg_price": 3.49,
             "implied_pct": 27.1
           }
         ],
@@ -3327,29 +3115,29 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.71,
-            "implied_pct": 28.0
+            "avg_price": 1.73,
+            "implied_pct": 27.7
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.12,
-            "implied_pct": 22.5
+            "avg_price": 2.11,
+            "implied_pct": 22.7
           },
           {
             "name": "Mais de 2.75 gols",
             "type": "over",
             "point": 2.75,
-            "avg_price": 1.94,
-            "implied_pct": 24.5
+            "avg_price": 1.97,
+            "implied_pct": 24.3
           },
           {
             "name": "Menos de 2.75 gols",
             "type": "under",
             "point": 2.75,
-            "avg_price": 1.91,
-            "implied_pct": 25.0
+            "avg_price": 1.89,
+            "implied_pct": 25.4
           }
         ],
         "btts": []
@@ -3369,19 +3157,19 @@
             "name": "Inter Milan",
             "type": "home",
             "avg_price": 1.41,
-            "implied_pct": 67.3
+            "implied_pct": 67.5
           },
           {
             "name": "VfB Stuttgart",
             "type": "away",
-            "avg_price": 6.18,
-            "implied_pct": 15.4
+            "avg_price": 6.21,
+            "implied_pct": 15.3
           },
           {
             "name": "Empate",
             "type": "draw",
-            "avg_price": 5.48,
-            "implied_pct": 17.3
+            "avg_price": 5.53,
+            "implied_pct": 17.2
           }
         ],
         "totals": [
@@ -3389,14 +3177,14 @@
             "name": "Mais de 3.5 gols",
             "type": "over",
             "point": 3.5,
-            "avg_price": 1.61,
-            "implied_pct": 14.8
+            "avg_price": 1.6,
+            "implied_pct": 14.9
           },
           {
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
-            "avg_price": 2.28,
+            "avg_price": 2.3,
             "implied_pct": 10.4
           },
           {
@@ -3404,42 +3192,42 @@
             "type": "over",
             "point": 2.5,
             "avg_price": 1.23,
-            "implied_pct": 19.4
+            "implied_pct": 19.3
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 4.14,
-            "implied_pct": 5.7
+            "avg_price": 4.08,
+            "implied_pct": 5.8
           },
           {
             "name": "Mais de 3.75 gols",
             "type": "over",
             "point": 3.75,
             "avg_price": 1.77,
-            "implied_pct": 13.5
+            "implied_pct": 13.4
           },
           {
             "name": "Menos de 3.75 gols",
             "type": "under",
             "point": 3.75,
-            "avg_price": 2.13,
-            "implied_pct": 11.1
+            "avg_price": 2.12,
+            "implied_pct": 11.2
           },
           {
             "name": "Mais de 4.0 gols",
             "type": "over",
             "point": 4.0,
-            "avg_price": 1.95,
+            "avg_price": 1.96,
             "implied_pct": 12.2
           },
           {
             "name": "Menos de 4.0 gols",
             "type": "under",
             "point": 4.0,
-            "avg_price": 1.86,
-            "implied_pct": 12.8
+            "avg_price": 1.89,
+            "implied_pct": 12.7
           }
         ],
         "btts": []
@@ -3458,20 +3246,20 @@
           {
             "name": "Manchester United",
             "type": "away",
-            "avg_price": 2.68,
-            "implied_pct": 35.3
+            "avg_price": 2.6,
+            "implied_pct": 36.4
           },
           {
             "name": "Sporting Lisbon",
             "type": "home",
-            "avg_price": 2.43,
-            "implied_pct": 38.9
+            "avg_price": 2.5,
+            "implied_pct": 37.9
           },
           {
             "name": "Empate",
             "type": "draw",
             "avg_price": 3.68,
-            "implied_pct": 25.8
+            "implied_pct": 25.7
           }
         ],
         "totals": [
@@ -3479,43 +3267,43 @@
             "name": "Mais de 2.5 gols",
             "type": "over",
             "point": 2.5,
-            "avg_price": 1.54,
-            "implied_pct": 20.6
+            "avg_price": 1.53,
+            "implied_pct": 20.8
           },
           {
             "name": "Menos de 2.5 gols",
             "type": "under",
             "point": 2.5,
-            "avg_price": 2.42,
-            "implied_pct": 13.1
+            "avg_price": 2.45,
+            "implied_pct": 12.9
           },
           {
             "name": "Mais de 3.5 gols",
             "type": "over",
             "point": 3.5,
-            "avg_price": 2.31,
-            "implied_pct": 13.7
+            "avg_price": 2.34,
+            "implied_pct": 13.6
           },
           {
             "name": "Menos de 3.5 gols",
             "type": "under",
             "point": 3.5,
             "avg_price": 1.6,
-            "implied_pct": 19.7
+            "implied_pct": 19.8
           },
           {
             "name": "Mais de 3.0 gols",
             "type": "over",
             "point": 3.0,
-            "avg_price": 1.88,
-            "implied_pct": 16.8
+            "avg_price": 1.84,
+            "implied_pct": 17.2
           },
           {
             "name": "Menos de 3.0 gols",
             "type": "under",
             "point": 3.0,
-            "avg_price": 1.97,
-            "implied_pct": 16.1
+            "avg_price": 2.01,
+            "implied_pct": 15.7
           }
         ],
         "btts": []
